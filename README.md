@@ -2,9 +2,9 @@
 
 ## Outline
 
-1. About mitum
+1. About MITUM
     1. About me
-    1. Brief History Of mitum
+    1. Brief History Of MITUM
     1. Future Plan
 1. Basic Principles
 1. Consensus Protocol
@@ -27,9 +27,17 @@
 1. Network
 1. Storage
 1. Testing
+1. Tools
+    1. NARU: Block API server
+    1. HAKSUEL: Block Explorer
+    1. Node Manager
+    1. Account Manager
+    1. LogViewer
+    1. Consensus Simulator
+    1. HotBody: Massive Transactions Sender
 1. Contribute
     1. Development
-        1. For mitum
-        1. Application For mitum
+        1. For MITUM
+        1. Application For MITUM
     1. Documentation
     1. Donate
