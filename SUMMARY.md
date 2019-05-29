@@ -1,8 +1,9 @@
 # Summary
 
-* [MITUM](README.md)
+## MITUM
+* [About MITUM](README.md)
 
-## Consensus Comparison
+## Comparison
 * [Comparison](Consensus-Comparison.md)
 
 * [BFT](Consensus-Comparison-BFT.md)
