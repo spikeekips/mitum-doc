@@ -10,6 +10,7 @@
 >
 > \- [Understanding Blockchain Fundamentals, Part 1: Byzantine Fault Tolerance](https://medium.com/loom-network/understanding-blockchain-fundamentals-part-1-byzantine-fault-tolerance-245f46fe8419)
 
+[^1]: [SOME CONSTRAINTS AND TRADEOFFS IN THE DESIGN OF NETWORK COMMUNICATIONS](http://hydra.infosys.tuwien.ac.at/teaching/courses/AdvancedDistributedSystems/download/1975_Akkoyunlu,%20Ekanadham,%20Huber_Some%20constraints%20and%20tradeoffs%20in%20the%20design%20of%20network%20communications.pdf), E. A. Akkoyunlu K. Ekanadham R. V. Hubert at 1985
 
 ## The Byzantine Generals Problem
 
@@ -17,6 +18,7 @@
 >
 > \- [Understanding Blockchain Fundamentals, Part 1: Byzantine Fault Tolerance](https://medium.com/loom-network/understanding-blockchain-fundamentals-part-1-byzantine-fault-tolerance-245f46fe8419)
 
+[^2]: [The Byzantine Generals Problem](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.126.9525&rep=rep1&type=pdf), by Lamport, Shostak and Pease at 1982
 
 ## Byzantine Generals Problem.
 
@@ -36,6 +38,3 @@
 * *COMMIT*
 * (*REPLY*)
 
-
-[^1]: [SOME CONSTRAINTS AND TRADEOFFS IN THE DESIGN OF NETWORK COMMUNICATIONS](http://hydra.infosys.tuwien.ac.at/teaching/courses/AdvancedDistributedSystems/download/1975_Akkoyunlu,%20Ekanadham,%20Huber_Some%20constraints%20and%20tradeoffs%20in%20the%20design%20of%20network%20communications.pdf), E. A. Akkoyunlu K. Ekanadham R. V. Hubert at 1985
-[^2]: [The Byzantine Generals Problem](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.126.9525&rep=rep1&type=pdf), by Lamport, Shostak and Pease at 1982
