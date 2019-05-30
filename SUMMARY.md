@@ -10,7 +10,7 @@
 * [ISAAC+ and Mechanism](ISAAC+-and-Mechanism.md)
 * [Node Network](ISAAC+-NodeNetwork.md)
     * [Node State](ISAAC+-NodeState.md)
-    * [Join Consensus Group](ISAAC+-Consnsus-Group.md)
+    * [Consensus Group](ISAAC+-Consnsus-Group.md)
 
 * [Stages](ISAAC+-Consensus-Stages.md)
     * [JOIN](ISAAC+-Consensus-JOIN.md)
