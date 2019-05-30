@@ -11,6 +11,7 @@
 * [Node Network](ISAAC+-NodeNetwork.md)
     * [Node State](ISAAC+-NodeState.md)
     * [Consensus Group](ISAAC+-Consnsus-Group.md)
+    * [Validator Group](ISAAC+-Validator-Group.md)
 
 * [Stages](ISAAC+-Consensus-Stages.md)
     * [JOIN](ISAAC+-Consensus-JOIN.md)
