@@ -30,21 +30,18 @@
 
 ## Tools
 
-### Service
+* [Service](Services.md)
+    * [NARU: Block API server](NARU-Block-API-server.md)
+    * [HAKSUEL: Block Explorer](HAKSUEL-Block-Explorer.md)
 
-* [NARU: Block API server](NARU-Block-API-server.md)
-* [HAKSUEL: Block Explorer](HAKSUEL-Block-Explorer.md)
+* [Application](Application.md)
+    * [Node Manager For Node Operator](Node-Manager.md)
+    * [Account Manager For Account Owner](Account-Manager.md)
 
-### Application
-
-* [Node Manager For Node Operator](Node-Manager.md)
-* [Account Manager For Account Owner](Account-Manager.md)
-
-### Development & Testing
-
-* [LogViewer](LogViewer.md)
-* [Consensus Simulator](Consensus-Simulator.md)
-* [HotBody: Massive Transactions Generator](HotBody-Massive-Transactions-Generator.md)
+* [Development & Testing](Development-And-Testing.md)
+    * [LogViewer](LogViewer.md)
+    * [Consensus Simulator](Consensus-Simulator.md)
+    * [HotBody: Massive Transactions Generator](HotBody-Massive-Transactions-Generator.md)
 
 ## Contribute
 
