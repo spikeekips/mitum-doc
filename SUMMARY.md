@@ -26,14 +26,17 @@
 
 * [Sync](ISAAC+-Sync.md)
 
-## [Components](Components.md)
+## Components
+
+* [Components](Components.md)
 
 * [Account](Account.md)
 * [Network](Network.md)
 * [Storage](Storage.md)
 
-## [Script](Script.md)
+## Script
 
+* [Script](Script.md)
 * [Network Script](Network-Script.md)
 * [Account Script](Account-Script.md)
 
