@@ -20,6 +20,6 @@ Every node can join *Consensus Group*, but there are some requirements and steps
 
 Node can submit the leaving request to *Consensus Group* and if it correctly signed by node, it will be applied to the block state.
 
-## Exile
+## Exile From *Consensus Group*
 
 Node in *Consensus Group* can be exiled by similar way, voting. If node in *Consensus Group* is judged to be the fauly node, any node in *Consensus Group* can propose the exile request for the faulty node. If passed, the node will be out of *Consensus Group*. If the fauly node want to join again, it should wait for the given time(almost 1 month?).
