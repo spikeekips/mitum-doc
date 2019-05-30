@@ -25,7 +25,7 @@ Node can submit the leaving request to *Consensus Group* and if it correctly sig
 
 Node in *Consensus Group* can be exiled by similar way, voting. If node in *Consensus Group* is judged to be the fauly node, any node in *Consensus Group* can propose the exile request for the faulty node. If passed, the node will be out of *Consensus Group*. If the fauly node want to join again, it should wait for the given time(almost 1 month?).
 
-## Whey The newly Node in Consensus Group Can Participate After 50 Blocks
+## Why The newly Node in Consensus Group Can Participate After 50 Blocks
 
 Ideally it will be natural that the new node can participate as soon as it joins, but in ISAAC+ it can participate the consensus process after 50 blocks from the block it joins. If `N₀` joined in the *Consensus Group* at `H33`, `N₀` can participate(it means `N₀` can broadcast `INIT` ballot to the network) after the block, `H88` is stored.
 
