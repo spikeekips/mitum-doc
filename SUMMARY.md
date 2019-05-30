@@ -15,11 +15,11 @@
 * [Node Network](ISAAC+-NodeNetwork.md)
 * [JOINing Node Network](ISAAC+-JOIN.md)
 
-### Consensus Process
-* [Consensus Process](ISAAC+-Consensus-Process.md)
-    * [INIT Stage](ISAAC+-Consensus-Process-INIT.md)
-    * [SIGN Stage](ISAAC+-Consensus-Process-SIGN.md)
-    * [ACCEPT Stage](ISAAC+-Consensus-Process-ACCEPT.md)
+### Stages: Consensus Process
+* [Stages](ISAAC+-Consensus-Stages.md)
+* [INIT Stage](ISAAC+-Consensus-Stage-INIT.md)
+* [SIGN Stage](ISAAC+-Consensus-Stage-SIGN.md)
+* [ACCEPT Stage](ISAAC+-Consensus-Stage-ACCEPT.md)
 
 ### Out Of Consensus
 
