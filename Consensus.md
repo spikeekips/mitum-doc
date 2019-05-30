@@ -12,21 +12,21 @@ ISAAC and ISAAC+ share the basic idaes and both of them is based on PBFT(Miguel 
 
 Traditionally PBFT has 4 phases, each phase represents how the incoming request from client reaches to the consensus.
 
-1. Request
-1. Pre-Prepare
-1. Prepare
-1. Commit
+1.*Request*
+1.*Pre-Prepare*
+1.*Prepare*
+1.*Commit*
 
 ISAAC and ISAAC+ has also similar 4 phases(in ISAAC+, it is called voting *Stage*),
 
-1. INIT
-1. SIGN
-1. ACCPET
-1. ALL-CONFIRM
+1.*INIT*
+1.*SIGN*
+1.*ACCPET*
+1.*ALL-CONFIRM*
 
 Each phase does have similar meaning.
 
-* INIT: similar to the *Pre-Prepare*, the selected proposer(leader in PBFT) broadcast it's proposal to the network
-* SIGN: similar to the *Prepare*, each node will validate the proposal
-* ACCEPT: similar to the *Commit*, if the proposal is passed the SIGN stage, and then each node will store the proposal
-* ALL-CONFIRM: this stage is not broadcasted, it just internal stage for starting next block.
+* *INIT*: similar to the *Pre-Prepare*, the selected proposer(leader in PBFT) broadcast it's proposal to the network
+* *SIGN*: similar to the *Prepare*, each node will validate the proposal
+* *ACCEPT*: similar to the *Commit*, if the proposal is passed the SIGN stage, and then each node will store the proposal
+* *ALL-CONFIRM*: this stage is not broadcasted, it just internal stage for starting next block.
