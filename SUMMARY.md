@@ -1,7 +1,7 @@
 # Summary
 
 ## MITUM
-* [About MITUM](README.md)
+* [About MITUM](About-MITUM.md)
 * [History of MITUM](History-MITUM.md)
 * [Future Plan](Future-Plan.md)
 
