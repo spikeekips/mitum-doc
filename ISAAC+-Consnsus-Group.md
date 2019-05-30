@@ -15,6 +15,7 @@ Every node can join *Consensus Group*, but there are some requirements and steps
 * Node should vote on the active *Proposal* in each round and can broadcast *SIGNBallot* to the current *Consensus Group* within the given time(before *ALL-CONFIRM* stage)
 * After the given time(at this time, almost 1 month?), node gathers the enough agreement signing from nodes of *Consensus Group* and proposes the entrance request to the node network.
 * The entrance request is validated by *Validator Group* and if passed, the node can be join *Consensus Group*
+* The newly joined node in *Consensus Group* can participate after 50 blocks from the block it joins.
 
 ## Leaving Consensus Group
 
@@ -23,3 +24,31 @@ Node can submit the leaving request to *Consensus Group* and if it correctly sig
 ## Exile From Consensus Group
 
 Node in *Consensus Group* can be exiled by similar way, voting. If node in *Consensus Group* is judged to be the fauly node, any node in *Consensus Group* can propose the exile request for the faulty node. If passed, the node will be out of *Consensus Group*. If the fauly node want to join again, it should wait for the given time(almost 1 month?).
+
+## Whey The newly Node in Consensus Group Can Participate After 50 Blocks
+
+Ideally it will be natural that the new node can participate as soon as it joins, but in ISAAC+ it can participate the consensus process after 50 blocks from the block it joins. If `N0` joined in the *Consensus Group* at `H33`, `N0` can participate(it means `N0` can broadcast `INIT` ballot to the network) after the block, `H88` is stored.
+
+This `50` block interval can make the lagged nodes can catch up easily to the global block state. In distributed environment, there are the lagged nodes, which are failed to sync with the global block state. `50` block interval will help this kind of lagged node can easily check out their block state is far behind from global state.
+
+We can assume this situations,
+
+* `N0` tries to start new round of `H133` and `R0` for voting of the next block of `H133`.
+* But the global state is `H135`.
+* `N0` keeps waiting the incoming ballots for `H133 R0`, but it can not receive because `H133` is already finished.
+
+`N0` will receive these ballots,
+
+- `B(N0 H133 R0)` : voted by `N0`
+- `B(N1 H135 R0)`
+- `B(N2 H135 R0)`
+- `B(N3 H135 R0)`
+
+* `N0` can check that something wrong.
+* `N0` checks, `H135` is over threshold.
+* `N0` can find which nodes are in *Validator Group* of `H135`.
+* `N0` can check `[N1 N2 N3]` is the valid nodes of *Validator Group* of `H135`
+* Eventually `N0` can know it's block state is far from the global block state, `H135`.
+* `N0` moves to *sync*.
+
+Without `50` block interval, `N0` can not check whether `[N1 N2 N3]` are in *Validator Group* of `H135`. To check which nodes are in `H135`, `N0` easily check the entire nodes of *Consensus Group* of `H85`(`135 - 50`).

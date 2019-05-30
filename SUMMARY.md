@@ -25,6 +25,7 @@
     * [SIGN Stage](ISAAC+-Consensus-Stage-SIGN.md)
     * [ACCEPT Stage](ISAAC+-Consensus-Stage-ACCEPT.md)
 
+* [Voting](ISAAC+-Voting.md)
 * [Sync](ISAAC+-Sync.md)
 
 ## Components
