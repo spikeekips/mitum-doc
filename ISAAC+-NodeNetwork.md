@@ -36,7 +36,7 @@ Every node can join *Consensus Group*, but there are some requirements and steps
     - validation capability
         - machine power
         - fast-enough network; network should be fast and under stable environment
-    - etc: additional conditions could be made by *Consensus Group*
+    - etc : additional conditions could be made by *Consensus Group*
 
 * Node should vote on the active *Proposal* in each round and can broadcast *SIGN* ballot to the current *Consensus Group* within the given time(before *ALL-CONFIRM* stage)
 * After the given time(at this time, almost 1 month?), node gathers the enough agreement signing from nodes of *Consensus Group* and proposes the entrance request to the node network.

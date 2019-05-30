@@ -27,14 +27,14 @@ TODO
 
 In the next, the detailed consensus mechanisms will be explained. For simple explanation, we assume the simple node network,
 
-* 4 nodes: one faulty node can be possible(according to `3f+1` rule)
+* 4 nodes : one faulty node can be possible(according to `3f+1` rule)
     - `[N₀ N₁ N₂ N₃]`
 * All the nodes is the node of *Consensus Group* and *Validator Group*
-    - *Consensus Group*: `[N₀ N₁ N₂ N₃]`
-    - *Validator Group*: `[N₀ N₁ N₂ N₃]`
+    - *Consensus Group* : `[N₀ N₁ N₂ N₃]`
+    - *Validator Group* : `[N₀ N₁ N₂ N₃]`
 * Every node can receive the transactions from outside of the network
-* ~~All the nodes has same block state: `BL0`~~
-* Each node is very closely connected with the others: low network latency
+* ~~All the nodes has same block state : `BL0`~~
+* Each node is very closely connected with the others : low network latency
 
 ---
 ***Faulty Node*** :

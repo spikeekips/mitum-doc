@@ -26,7 +26,7 @@ ISAAC and ISAAC+ has also similar 4 phases(in ISAAC+, it is called voting *Stage
 
 Each phase does have similar meaning.
 
-* *INIT*: similar to the *Pre-Prepare*, the selected proposer(leader in PBFT) broadcast it's proposal to the network
-* *SIGN*: similar to the *Prepare*, each node will validate the proposal
-* *ACCEPT*: similar to the *Commit*, if the proposal is passed the SIGN stage, and then each node will store the proposal
-* *ALL-CONFIRM*: this stage is not broadcasted, it just internal stage for starting next block.
+* *INIT* : similar to the *Pre-Prepare*, the selected proposer(leader in PBFT) broadcast it's proposal to the network
+* *SIGN* : similar to the *Prepare*, each node will validate the proposal
+* *ACCEPT* : similar to the *Commit*, if the proposal is passed the SIGN stage, and then each node will store the proposal
+* *ALL-CONFIRM* : this stage is not broadcasted, it just internal stage for starting next block.

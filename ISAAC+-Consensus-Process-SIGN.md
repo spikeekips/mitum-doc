@@ -9,9 +9,9 @@ In *SIGN* stage, node proposes *Proposal* or wait *Proposal*, and validates it. 
 
 ISAAC+ shares the basic rule of consensus. In evenry round, there are *Proposer* and *Proposer* will propose the list of transactions using *Proposal* seal. *Proposal* should have these informations,
 
-* *Block*: last block state
-* *Round*: voting round
-* *Transactions*: list of *Transaction*s
+* *Block* : last block state
+* *Round* : voting round
+* *Transactions* : list of *Transaction*s
 
 ---
 
@@ -26,7 +26,7 @@ If *Proposal* is not valid, node starts next round with same block. After valida
 *SIGN* ballot has these kind of informations,
 
 * *Proposal*
-* *Block*: next *block* state, which is applied *Proposal*
+* *Block* : next *block* state, which is applied *Proposal*
 
 *SIGN* ballot will be validated by,
 

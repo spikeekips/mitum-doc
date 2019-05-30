@@ -13,7 +13,7 @@ Node starts, it has *BOOTING* state and then, it tries to join node network, *JO
 
 *BlockProof* is usually used for joining node network. It contains several informations,
 
-* Current *block* state: *height* and *hash*
+* Current *block* state : *height* and *hash*
 * *Proposal* and *ACCEPTBallot* seals of current *block*(, not their *hash*es)
 
 ---

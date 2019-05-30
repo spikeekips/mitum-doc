@@ -21,9 +21,9 @@ Node can broadcast *INIT* ballot in *INIT* stage. Same *block* and *round* reach
 
 In *INIT* Ballot should have these informations,
 
-* *Block*: last block state, usually *block* *height* will be used
-* *Round*: voting round, usually it starts from *0*
-* *Proposer*: *Proposer* node of *Block* and *Round*; naturally *Proposer* is one of *Validator Group*
+* *Block* : last block state, usually *block* *height* will be used
+* *Round* : voting round, usually it starts from *0*
+* *Proposer* : *Proposer* node of *Block* and *Round*; naturally *Proposer* is one of *Validator Group*
 
 Lime *Proposer*, nodes in *Validator Group* also should be selected by the specific block height and the round.
 
