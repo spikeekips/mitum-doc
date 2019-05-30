@@ -8,8 +8,7 @@ Node starts, it has *BOOTING* state and then, it tries to join node network, *JO
 1. If the selected *BlockProof* is different(higher or lower) from node's, node tries to sync.
 1. If same, node broadcasts *INIT* ballot.
 
----
-***BlockProof*** :
+##### ***BlockProof*** :
 
 *BlockProof* is usually used for joining node network. It contains several informations,
 
@@ -17,3 +16,4 @@ Node starts, it has *BOOTING* state and then, it tries to join node network, *JO
 * *Proposal* and *ACCEPTBallot* seals of current *block*(, not their *hash*es)
 
 ---
+
