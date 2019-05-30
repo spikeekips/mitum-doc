@@ -3,4 +3,4 @@
 *"Inveniet viam aut faciet"*
 
 
-![Chained MITIM](./images/mitum-500.png "MITUMs are chained")
+![Chained MITIM](./images/mitum-logo-1000.png "MITUMs are chained")
