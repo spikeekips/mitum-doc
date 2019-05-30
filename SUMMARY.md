@@ -1,6 +1,7 @@
 # Summary
 
 ## MITUM
+
 * [History of MITUM](History-MITUM.md)
 * [Future Plan](Future-Plan.md)
 
@@ -18,21 +19,12 @@
 
 * [Sync](ISAAC+-Sync.md)
 
-## Comparison
-* [Comparison](Consensus-Comparison.md)
-
-* [BFT](Consensus-Comparison-BFT.md)
-* [Bitcoin](Consensus-Comparison-Bitcoin.md)
-* [PBFT](Consensus-Comparison-PBFT.md)
-* [RBFT](Consensus-Comparison-RBFT.md)
-
-## Component
-
-* [Seal](Seal.md)
-* [Account](Account.md)
-* [Script](Script.md)
-* [Network](Network.md)
-* [Storage](Storage.md)
+* [Components](Components.md)
+    * [Seal](Seal.md)
+    * [Account](Account.md)
+    * [Script](Script.md)
+    * [Network](Network.md)
+    * [Storage](Storage.md)
 
 ## Tools
 
@@ -50,6 +42,16 @@
 * [Application For MITUM](Application-For-MITUM.md)
 * [Documentation](Documentation.md)
 * [Donate](Donate.md)
+
+## Comparison
+
+* [Consensus](Consensus-Comparison.md)
+    * [BFT](Consensus-Comparison-BFT.md)
+    * [Bitcoin](Consensus-Comparison-Bitcoin.md)
+    * [PBFT](Consensus-Comparison-PBFT.md)
+    * [RBFT](Consensus-Comparison-RBFT.md)
+
+* [Mechanism](Mechanism-Comparison.md)
 
 ## Glossary
 * [Terminology](Terminology.md)
