@@ -1,6 +1,6 @@
 # Sync
 
-If node notices the global state is different from node itself, node should try to sync it's block state to global's. In ISAAC+, syncing process is extremely simple. There are some differences in various sync cases, but basically node requests the block state from the other nodes of *Consensus Group*. The node outside *Consensus Group* can not request the block data from *Consensus Group* directly, but the MITUM API server or other service can be used.
+If node notices the global state is different from node itself, node should try to sync it's block state to global's. In ISAAC+, syncing process is extremely simple. There are some differences in various sync cases, but basically node requests the block state from the other nodes of *Consensus Group*. The node outside *Consensus Group* can not request the block data from *Consensus Group* directly, but the MITUM API server or other services can be used.
 
 Simply the basic process is,
 
@@ -14,7 +14,7 @@ Node should be request from lower block to higher. In fact, the order of block i
 
 ## Completing Catching Up
 
-If node does complete to catch up the latest block state, node can join the consensus. To do it safely, node can wait for incoming agreement of the nodes in *Validator Group*. Node keeps watching the active voting stage and also shoudl be ready to store the active *proposal*. After node verifies the *ACCEPT* agreement, node will join the network.
+If node does complete to catch up the latest block state, node can join the consensus. To do it safely, node can wait for incoming agreement of the nodes in *Validator Group*. Node keeps watching the active voting stage and also should be ready to store the active *proposal*. After node verifies the *ACCEPT* agreement, node will join the network.
 
 The detailed process will be like this,
 
