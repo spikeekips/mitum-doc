@@ -17,7 +17,7 @@
 * [JOINing Node Network](ISAAC+-JOIN.md)
 * [Consensus Process](ISAAC+-Consensus-Process.md)
     * [INIT Stage](ISAAC+-Consensus-Process-INIT.md)
-    * [SIGN Stage](ISAAC+-Consensus-Process-SIGN)
+    * [SIGN Stage](ISAAC+-Consensus-Process-SIGN.md)
     * [ACCEPT Stage](ISAAC+-Consensus-Process-ACCEPT.md)
 
 * [Sync](ISAAC+-Sync.md)
