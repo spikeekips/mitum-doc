@@ -30,8 +30,8 @@
 
 ## Phases
 
-* (`request`)
-* `pre-prepare`
-* `prepare`
-* `commit`
-* (`reply`)
+* (*REQUEST*)
+* *PRE-PREPARE*
+* *PREPARE*
+* *COMMIT*
+* (*REPLY*)

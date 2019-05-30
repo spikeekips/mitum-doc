@@ -1,6 +1,6 @@
 # ISAAC+ and Mechanism
 
-## Consensus Protocol
+## ISAAC+ vs. PBFT
 
 ISAAC+ is based on tranditional PBFT. The basic rules of PBFT are,
 
@@ -19,52 +19,53 @@ ISAAC+ is also based these rules and has some additional rules,
 
 Like PBFT, the recommended threshold for *Validator Group* is at least 67%.
 
-## Node Network
+## Seal
 
-There are several role for node in ISAAC+.
+All messages should be signed by sender, even client transaction also should be singed by account owner. MITUM use *Ed25519S* based keypair for signing and it is basically identical with [Stellar keypair](https://godoc.org/github.com/stellar/go/keypair).
 
-* Submittig `Proposal` for next block
-* Keeping the state of block
-* Validation of `Proposal`, blocks
-* Maintaining *Consensus Group* by node of *Consensus Group*
+The signed message, it is called *Seal*, it holds the message content. In MITUM there are several built-in seals,
 
-Node consists the consensus network and node can participate the consensus process, but every node participate. The one of the critical fitfall of PBFT is that PBFT network is that only the small group of nodes can join the consensus for performance reason. To overcome this limitation, ISAAC+ has *Consensus Group* and *Validator Group*.
+### Consensus Related Seals
+* *Proposal*: *proposer* will propose the transactions for next *block*
+* *Ballot*s: votes for *Proposal* in each *stage*
+    - *INITBallot*
+    - *SIGNBallot*
+    - *ACCEPTBallot*
+* *Transaction*
 
-### *Consensus Group* and *Validator Group*
+### Block Related Seals
 
-![Network Groups](./images/network-groups.png "Network Groups in ISAAC+")
+* *BlockProof*: When node tries to join node network and it requests the last blocks and it's proof to the nodes of Consensus Group.
 
-*Validator Group* is the group of nodes to vote for new block. There are so many nodes can exist, but only small group of node can be participate the consensus in ISAAC+. *Validator Group* is selected from *Consensus Group* and node in the *Validator Group* can vote for new block.
+## Limitations
 
-*Consensus Group* is the set of nodes for ready to be *Validator Group*.
+TODO
 
-Simply we can put together like this,
+## Detailed Consensus Mechanism
 
-* In each round, only the nodes in *Validator Group* can participate the consensus
-* `Proposer` is selected from *Validator Group*
-* *Validator Group* is changed in each round
-* For performance reason, the number of *Validator Group* should be limited
-* The node list of *Consensus Group* is stored in the block
+In the next, the detailed consensus mechanisms will be explained. For simple explanation, we assume the simple node network,
 
-### Joining *Consensus Group*
+* 4 nodes: one faulty node can be possible(according to `3f+1` rule)
+    - `[N₀ N₁ N₂ N₃]`
+* All the node is the node of *Consensus Group* and *Validator Group*
+    - *Consensus Group*: `[N₀ N₁ N₂ N₃]`
+    - *Validator Group*: `[N₀ N₁ N₂ N₃]`
+* Every node can receive the transactions from outside of the network
+* ~~All the nodes has same block state: `BL0`~~
+* Each node is very closely connected with the others: low network latency
 
-Every node can join *Consensus Group*, but there are some requirements and steps.
+<dl>
+  <dt>
+  
+  *Faulty Node*:
+  
+  </dt>
+  <dd>
 
-* Node, which want to join the *Consensus Group* should prove itself
-    - enough amount of balance
-    - state of block
-    - validation capability
-    - it's network stability
-    - etc
-* Node should vote on `Proposal` in each round and broadcast `SIGN` ballot to the current *Consensus Group* within the given time(before `ALL-CONFIRM` stage)
-* After the given time(at this time, almost 1 month?), node gathers the enough agreement signing from nodes of *Consensus Group* and proposes the entrance request to the network.
-* The entrance request is validated by *Validator Group* and if passed, the node can be join *Consensus Group*
+Faulty node is the failed or non-functioning node to the other nodes. This node,
 
-Node in *Consensus Group* can be exiled by similar way, voting. If node in *Consensus Group* is judged to be the fauly node, any node in *Consensus Group* can propose the exile request for the faulty node. If passed, the node will be out of *Consensus Group*. If the fauly node want to join again, it should wait for the given time(almost 1 month?).
-
-
-## Limitation
-
-* Account can send only one transaction per block
-    - Account can not send 2 or more transactions at the same block
-* There are some number of transaction for one block
+* Can be crashed,
+* Has the different states to other nodes,
+* reponses teh different acts to other nodes
+  </dd>
+</dl>
