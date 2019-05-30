@@ -67,7 +67,6 @@ In the next, the detailed consensus mechanisms will be explained. For simple exp
     - *Consensus Group* : `[N₀ N₁ N₂ N₃]`
     - *Validator Group* : `[N₀ N₁ N₂ N₃]`
 * Every node can receive the transactions from outside of the network
-* ~~All the nodes has same block state : `BL0`~~
 * Each node is very closely connected with the others : low network latency
 
 ---
@@ -80,3 +79,24 @@ Faulty node is the failed or non-functioning node to the other nodes. This node,
 * Or reponses teh different acts to other nodes
 
 ---
+
+## Node can be Faulty Node
+
+Every node can be faulty node, whether it is in *Validator Group*, *Consensus Group* or even not in both.
+
+### Common Faulty Node
+
+* If it does not respond the request from other nodes,
+* If it is not in *Consensus* node state,
+* If it seems to have the different block state to the nodes,
+
+### Faulty Node in *Consensus Group*
+
+* If it does not serve *BlockProof*,
+* If it serves the invalid *BlockProof*,
+
+### Faulty Node in *Validator Group*
+
+* If it is *proposer* and it does not broadcast *proposal*,
+* If it does not broadcast *ballot*s,
+* If it broadcast the invalid *ballot*,

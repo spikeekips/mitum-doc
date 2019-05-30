@@ -15,13 +15,21 @@ Node retries consensus by increasing round.
 
 ---
 
-Node can broadcast *INITBallot* in *INIT* stage. Same *block* and *round* reaches agreement, and then goes to *SIGN* stage.
+Node can broadcast *INITBallot* in *INIT* stage. Same *block* and *round* reaches agreement within the collected *ballot*s, and then goes to *SIGN* stage.
 
-## Manged Senario
+## Mangled Senario
 
 ### Ballots Not Received In Given Time
 
 In the given time, node is failed to receive the enough ballots to reach agreement, node will start next round.
+
+* `N₀` collected these *INITBallot*s,
+    * `B(N₀ INIT H33 R0)`
+    * `B(N₃ INIT H33 R0)`
+* After teh given time, there are no more incoming ballots,
+* `N₀` starts the next round, `H33 R1`.
+
+> `B(N₀ INIT H33 R0)` means, *INITBallot*, which is signed by `N₀` for block, `H33` and round, `R0`.
 
 ### Mangled with different blocks and rounds
 
@@ -32,9 +40,7 @@ In the given time, node is failed to receive the enough ballots to reach agreeme
 * `B(N₂ INIT H34 R0)`
 * `B(N₃ INIT H34 R0)`
 
-> `B(N₀ INIT H33 R0)` means, *INITBallot*, which is signed by `N₀` for block, `H33` and round, `R0`
-
-Except `N₀`, the other nodes can reach agreement for `H33` and `R0`. In this situation, the other nodes except `N₀` will continue to *SIGN* and `N₀` will accept the agreement for `H34` and `R0`, so `N₀` should go into *SYNC*. If `N₀` does not move to *SYNC*, it will not participate consensus in the future.
+Except `N₀`, the other nodes can reach agreement for `H34` and `R0`. In this situation, the other nodes except `N₀` will continue to *SIGN* and `N₀` will accept the agreement for `H34` and `R0`, so `N₀` should go into *SYNC*. If `N₀` does not move to *SYNC*, it will not participate consensus in the future.
 
 
 ### All nodes has different blocks and rounds

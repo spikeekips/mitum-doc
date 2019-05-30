@@ -17,7 +17,7 @@ If *Proposal* is not valid, node starts next round with same block. After valida
 * Same *Block* is over thesehold
 
 
-## Manged Senario
+## Mangled Senario
 
 ### None-Proposer node Waits Proposal, But Does Not
 
