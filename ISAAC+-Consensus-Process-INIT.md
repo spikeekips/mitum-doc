@@ -2,15 +2,18 @@
 
 In *INIT* STAGE, NODE TRIES TO START NEXT BLOCK OR NEW ROUND. AFTER *INIT* AGREEMENT BETWEEN NODES, NODE WILL START CONSENSUS FOR NEXT BLOCK OR NEST ROUND.
 
-***ROUND*** :
+---
+***ROUND***
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In isaac+, there is only one voting for same block and same round at the time in entire network. Ff current block is `h33` and node starts consensus for it,
+In isaac+, there is only one voting for same block and same round at the time in entire network. Ff current block is `h33` and node starts consensus for it,
 
 1. Node starts round, `R0` for `H33`.
 1. If consensus reached, node starts new round, `R0-H34`, `H34` is newly created block.
 1. If consensus failed, node start next round for `R1-H33`.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Node retries consensus by increasing round.
+Node retries consensus by increasing round.
+
+---
 
 Node can broadcast *INIT* ballot in *INIT* stage. Same *block* and *round* reaches agreement, and then goes to *SIGN* stage.
 

@@ -36,10 +36,13 @@ In the next, the detailed consensus mechanisms will be explained. For simple exp
 * ~~All the nodes has same block state: `BL0`~~
 * Each node is very closely connected with the others: low network latency
 
-***Faulty Node***:
+---
+***Faulty Node***
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Faulty node is the failed or non-functioning node to the other nodes. This node,
+Faulty node is the failed or non-functioning node to the other nodes. This node,
 
 * Can be crashed,
 * Has the different states to other nodes,
 * reponses teh different acts to other nodes
+
+---

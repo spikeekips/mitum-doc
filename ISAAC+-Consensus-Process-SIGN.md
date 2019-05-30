@@ -4,13 +4,16 @@ In *SIGN* stage, node proposes *Proposal* or wait *Proposal*, and validates it. 
 
 1. If node is *Proposer*, it proposes *Proposal*
 
-***Proposal***:
+---
+***Proposal***
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ISAAC+ shares the basic rule of consensus. In evenry round, there are *Proposer* and *Proposer* will propose the list of transactions using *Proposal* seal. *Proposal* should have these informations,
+ISAAC+ shares the basic rule of consensus. In evenry round, there are *Proposer* and *Proposer* will propose the list of transactions using *Proposal* seal. *Proposal* should have these informations,
 
 * *Block*: last block state
 * *Round*: voting round
 * *Transactions*: list of *Transaction*s
+
+---
 
 After *Proposal* recevied, node should do like these jobs,
 
