@@ -9,7 +9,7 @@ There are several role for node in ISAAC+.
 
 Node consists the node network and node can participate the consensus process, but every node participate. The one of the critical fitfall of PBFT is that PBFT node network is that only the small group of nodes can join the consensus for performance reason. To overcome this limitation, ISAAC+ has *Consensus Group* and *Validator Group*.
 
-## *Consensus Group* and *Validator Group*
+## Consensus Group and Validator Group
 
 ![Node Network Groups](./images/network-groups.png "Node Network Groups in ISAAC+")
 

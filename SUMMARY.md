@@ -12,6 +12,7 @@
     * [Node State](ISAAC+-NodeState.md)
     * [Consensus Group](ISAAC+-Consnsus-Group.md)
     * [Validator Group](ISAAC+-Validator-Group.md)
+    * [Messaging](ISAAC+-Messaging.md)
 
 * [Seal](Seal.md)
     * [Proposal](Proposal.md)
@@ -73,4 +74,5 @@
 * [Mechanism](Mechanism-Comparison.md)
 
 ## Glossary
+
 * [Terminology](Terminology.md)

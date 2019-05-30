@@ -8,7 +8,7 @@ Simply the basic process is,
 1. Node requests *BlockProof* of the missing block to the other nodes of *Consensus Group*.
 1. The recieved *BlockProof* data are valid and then, node tries to join node network again.
 
-## Requesting *BlockProof*
+## Requesting BlockProof
 
 Node should be request from lower block to higher. In fact, the order of block is not important, but blocks are chained by hash as time sequence, so to validate higher block we need the previous blocks. :)
 

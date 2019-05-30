@@ -1,4 +1,4 @@
-# *JOIN*ing Node Network
+# Joining Node Network
 
 Node starts, it has *BOOTING* state and then, it tries to join node network, *JOIN* state. During joining node network, node checks whether it's current state is identical with the others.
 

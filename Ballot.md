@@ -10,7 +10,7 @@ Each voting state has the unique *ballot* types,
 
 ## Specification
 
-### *INITBallot*
+### INITBallot
 
 *INITBallot* should have these informations,
 
@@ -20,14 +20,14 @@ Each voting state has the unique *ballot* types,
 
 Like *Proposer*, nodes in *Validator Group* also should be selected by the specific block height and the round.
 
-### *SIGNBallot*
+### SIGNBallot
 
 *SIGNBallot* has these kind of informations,
 
 * *Proposal*
 * *Block* : next *block* state, which is applied *Proposal*
 
-### *ACCEPTBallot*
+### ACCEPTBallot
 
 *ACCEPTBallot* has these kind of informations,
 

@@ -1,4 +1,4 @@
-# *SIGN* Stage
+# SIGN Stage
 
 In *SIGN* stage, node proposes *Proposal* or wait *Proposal*, and validates it. In details,
 
