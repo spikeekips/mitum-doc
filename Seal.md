@@ -12,6 +12,10 @@ By default, *Seal* has these informations,
 
 In MITUM there are several built-in seals,
 
+## Account Request Seals
+
+* *Transaction*
+
 ## Consensus Related Seals
 
 * *Proposal* : *proposer* will propose the transactions for next *block*
@@ -19,7 +23,6 @@ In MITUM there are several built-in seals,
     - *INITBallot*
     - *SIGNBallot*
     - *ACCEPTBallot*
-* *Transaction*
 
 ## Block Related Seals
 
