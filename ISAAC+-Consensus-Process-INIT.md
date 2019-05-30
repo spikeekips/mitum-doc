@@ -1,6 +1,6 @@
 # *INIT* Stage
 
-In *INIT* STAGE, NODE TRIES TO START NEXT BLOCK OR NEW ROUND. AFTER *INIT* AGREEMENT BETWEEN NODES, NODE WILL START CONSENSUS FOR NEXT BLOCK OR NEST ROUND.
+In *init* stage, node tries to start next block or new round. After *init* agreement between nodes, node will start consensus for next block or nest round.
 
 ---
 ***ROUND***

@@ -12,7 +12,7 @@ In ISAAC+, there are 4 consensus stage,
 Each stage has it's own ballot.
 
 ---
-***Ballot***:
+***Ballot***
 
 *Ballot*, the name explains, is the seal type for voting. It is basic seal for consensus. Each consensus stage has it's own ballot type and informations.
 
