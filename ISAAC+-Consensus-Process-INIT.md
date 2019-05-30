@@ -3,7 +3,7 @@
 In *init* stage, node tries to start next block or new round. After *init* agreement between nodes, node will start consensus for next block or nest round.
 
 ---
-***ROUND***
+***ROUND*** :
 
 In isaac+, there is only one voting for same block and same round at the time in entire network. Ff current block is `h33` and node starts consensus for it,
 

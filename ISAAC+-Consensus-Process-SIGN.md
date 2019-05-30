@@ -5,7 +5,7 @@ In *SIGN* stage, node proposes *Proposal* or wait *Proposal*, and validates it. 
 1. If node is *Proposer*, it proposes *Proposal*
 
 ---
-***Proposal***
+***Proposal*** :
 
 ISAAC+ shares the basic rule of consensus. In evenry round, there are *Proposer* and *Proposer* will propose the list of transactions using *Proposal* seal. *Proposal* should have these informations,
 
