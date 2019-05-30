@@ -10,5 +10,5 @@ Node starts, it has *BOOTING* state and then, it tries to join node network, *JO
 
 <dl>
   <dt>*BlockProof*:</dt>
-  <dd>*BlockProof* is usually used for joining node network. It contains several informations,<br /><br /> * Current *block* state: *height* and *hash*<br /> * *Proposal* and *ACCEPTBallot* seals of current *block*(, not their *hash*es) </dd>
+  <dd>*BlockProof* is usually used for joining node network. It contains several informations,<br /> * Current *block* state: *height* and *hash* <br />*Proposal* and *ACCEPTBallot* seals of current *block*(, not their *hash*es) </dd>
 </dl>
