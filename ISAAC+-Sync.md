@@ -5,7 +5,7 @@ If node notices the global state is different from node itself, node should try 
 Simply the basic process is,
 
 1. Node notices it's block state is different from the global state.
-1. Node requests the missing *BlockProof* data to the other nodes of *Consensus Group*.
+1. Node requests *BlockProof* of the missing block to the other nodes of *Consensus Group*.
 1. The recieved *BlockProof* data are valid and then, node tries to join node network again.
 
 ## Requesting *BlockProof*
