@@ -18,7 +18,7 @@ If node does complete to catch up the latest block state, node can join the cons
 
 The detailed process will be like this,
 
-| global state  | `N0`'s state  |
+| global state  | `N₀`'s state  |
 |---------------|---------------|
 |  `H105`       | `H33 `        |
 |  ...          | ...           |
@@ -28,22 +28,22 @@ The detailed process will be like this,
 |  ...          | ...           |
 |  `H130`       | `H130`        |
 
-* `N0` is one of *Consensus Group*.
-* `N0` is trying to sync from `H33` to `H105`.
-* `N0` keeps to catch up the global state until the state is same by requesting *BlockProof*.
-* `N0` reaches `H130`, this is same state with global.
-* `N0` also tries collect the *proposal*, *SIGNBallot*s and *ACCEPTBallot*s for joining again node network.
+* `N₀` is one of *Consensus Group*.
+* `N₀` is trying to sync from `H33` to `H105`.
+* `N₀` keeps to catch up the global state until the state is same by requesting *BlockProof*.
+* `N₀` reaches `H130`, this is same state with global.
+* `N₀` also tries collect the *proposal*, *SIGNBallot*s and *ACCEPTBallot*s for joining again node network.
 
-| global state       | `N0`'s state  |
+| global state       | `N₀`'s state  |
 |--------------------|---------------|
 | `H131`(*Proposal*) | `H131`        |
 | `H131`(*SIGN*)     | `H131`        |
 | `H131`(*ACCEPT*)   | `H131`        |
 
-* After `H131` is finished in global, `N0` also stores `H131`.
-* `N0` waits the *INITBallot* for `H131`.
-* *INITBallot*s for `H131` reaches agreement, `N0` also waits *proposal* for `H131`.
-* `N0` validates the *proposal* and waits the incoming *SIGN* and *ACCEPTBallot*s to reach agreement like other nodes of *Validator Group*.
-* Naturally `N0` can finish `H132`(the next block of `H131`) and ready to join again.
-* If `N0` is selected as one of *Validator Group*, `N0` starts new round for `H132`.
+* After `H131` is finished in global, `N₀` also stores `H131`.
+* `N₀` waits the *INITBallot* for `H131`.
+* *INITBallot*s for `H131` reaches agreement, `N₀` also waits *proposal* for `H131`.
+* `N₀` validates the *proposal* and waits the incoming *SIGN* and *ACCEPTBallot*s to reach agreement like other nodes of *Validator Group*.
+* Naturally `N₀` can finish `H132`(the next block of `H131`) and ready to join again.
+* If `N₀` is selected as one of *Validator Group*, `N₀` starts new round for `H132`.
 
