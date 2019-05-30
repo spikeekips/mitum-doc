@@ -2,7 +2,7 @@
 
 ## MITUM
 * [About MITUM](README.md)
-* [History of MITUM](History.md)
+* [History of MITUM](History-MITUM.md)
 * [Future Plan](Future-Plan.md)
 
 ## How MITUM works
