@@ -2,6 +2,12 @@
 
 ## MITUM
 * [About MITUM](README.md)
+* [History of MITUM](History.md)
+* [Future Plan](Future-Plan.md)
+
+## How MITUM works
+* [MITUM Consensus](Consensus.md)
+* [ISAAC+ and Mechanism](Consensus.md)
 
 ## Comparison
 * [Comparison](Consensus-Comparison.md)
