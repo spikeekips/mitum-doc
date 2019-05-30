@@ -25,7 +25,6 @@
     1. Script
     1. Network
     1. Storage
-1. Testing
 1. Tools
     1. NARU: Block API server
     1. HAKSUEL: Block Explorer
