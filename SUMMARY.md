@@ -13,6 +13,11 @@
     * [Consensus Group](ISAAC+-Consnsus-Group.md)
     * [Validator Group](ISAAC+-Validator-Group.md)
 
+* [Seal](Seal.md)
+    * [Proposal](Proposal.md)
+    * [Ballot](Ballot.md)
+    * [Transaction](Transaction.md)
+
 * [Stages](ISAAC+-Consensus-Stages.md)
     * [JOIN](ISAAC+-Consensus-JOIN.md)
     * [INIT Stage](ISAAC+-Consensus-Stage-INIT.md)
@@ -21,12 +26,16 @@
 
 * [Sync](ISAAC+-Sync.md)
 
-* [Components](Components.md)
-    * [Seal](Seal.md)
-    * [Account](Account.md)
-    * [Script](Script.md)
-    * [Network](Network.md)
-    * [Storage](Storage.md)
+## [Components](Components.md)
+
+* [Account](Account.md)
+* [Network](Network.md)
+* [Storage](Storage.md)
+
+## [Script](Script.md)
+
+* [Network Script](Network-Script.md)
+* [Account Script](Account-Script.md)
 
 ## Tools
 

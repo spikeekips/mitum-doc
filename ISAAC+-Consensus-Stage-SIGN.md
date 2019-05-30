@@ -4,31 +4,15 @@ In *SIGN* stage, node proposes *Proposal* or wait *Proposal*, and validates it. 
 
 1. If node is *Proposer*, it proposes *Proposal*
 
----
-***Proposal*** :
-
-ISAAC+ shares the basic rule of consensus. In evenry round, there are *Proposer* and *Proposer* will propose the list of transactions using *Proposal* seal. *Proposal* should have these informations,
-
-* *Block* : last block state
-* *Round* : voting round
-* *Transactions* : list of *Transaction*s
-
----
-
 After *Proposal* recevied, node should do like these jobs,
 
 1. Validates the received *Proposal*
 1. Validates the *Transaction*s in *Proposal*
 1. Ready to store the next block with *Transactions*
 
-If *Proposal* is not valid, node starts next round with same block. After validation of *Proposal*, node can make the next block and it's *hash*. After validation, node will broadcast *SIGN* ballot with the new *block* *hash*. Node votes and collects *SIGN* ballots. If *SIGN* ballots are reached to agreement, node should go to the next stage, *ACCEPT*. 
+If *Proposal* is not valid, node starts next round with same block. After validation of *Proposal*, node can make the next block and it's *hash*. After validation, node will broadcast *SIGNBallot* with the new *block* *hash*. Node votes and collects *SIGNBallot*s. If *SIGNBallot*s are reached to agreement, node should go to the next stage, *ACCEPT*. 
 
-*SIGN* ballot has these kind of informations,
-
-* *Proposal*
-* *Block* : next *block* state, which is applied *Proposal*
-
-*SIGN* ballot will be validated by,
+*SIGNBallot* will be validated by,
 
 * Same *Block* is over thesehold
 

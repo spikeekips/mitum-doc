@@ -6,7 +6,7 @@ Node starts, it has *BOOTING* state and then, it tries to join node network, *JO
 1. Node requests *BlockProof*s to the nodes of Consensus Group.
 1. Node chooses the highest and valid *BlockProof*.
 1. If the selected *BlockProof* is different(higher or lower) from node's, node tries to sync.
-1. If same, node broadcasts *INIT* ballot.
+1. If same, node broadcasts *INITBallot*.
 
 ---
 ***BlockProof*** :

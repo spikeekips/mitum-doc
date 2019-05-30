@@ -15,17 +15,7 @@ Node retries consensus by increasing round.
 
 ---
 
-Node can broadcast *INIT* ballot in *INIT* stage. Same *block* and *round* reaches agreement, and then goes to *SIGN* stage.
-
-## INIT Ballot
-
-In *INIT* Ballot should have these informations,
-
-* *Block* : last block state, usually *block* *height* will be used
-* *Round* : voting round, usually it starts from *0*
-* *Proposer* : *Proposer* node of *Block* and *Round*; naturally *Proposer* is one of *Validator Group*
-
-Lime *Proposer*, nodes in *Validator Group* also should be selected by the specific block height and the round.
+Node can broadcast *INITBallot* in *INIT* stage. Same *block* and *round* reaches agreement, and then goes to *SIGN* stage.
 
 ## Manged Senario
 
@@ -35,21 +25,21 @@ In the given time, node is failed to receive the enough ballots to reach agreeme
 
 ### Mangled with different blocks and rounds
 
-`N0` collected these *INIT* ballots,
+`N0` collected these *INITBallot*s,
 
 * `B(N0 INIT H33 R0)`
 * `B(N1 INIT H34 R0)`
 * `B(N2 INIT H34 R0)`
 * `B(N3 INIT H34 R0)`
 
-> `B(N0 INIT H33 R0)` means, *INIT* ballot, which is signed by `N0` for block, `H33` and round, `R0`
+> `B(N0 INIT H33 R0)` means, *INITBallot*, which is signed by `N0` for block, `H33` and round, `R0`
 
 Except `N0`, the other nodes can reach agreement for `H33` and `R0`. In this situation, the other nodes except `N0` will continue to *SIGN* and `N0` will accept the agreement for `H34` and `R0`, so `N0` should go into *SYNC*. If `N0` does not move to *SYNC*, it will not participate consensus in the future.
 
 
 ### All nodes has different blocks and rounds
 
-`N0` collected these *INIT* ballots,
+`N0` collected these *INITBallot*s,
 
 * `B(N0 INIT H33 R0)`
 * `B(N1 INIT H34 R1)`
@@ -60,7 +50,7 @@ In this case, agreement is impossible, we call it, voting result is *DRAW*ed. `N
 
 ### All nodes has same blocks, but different rounds
 
-`N0` collected these *INIT* ballots,
+`N0` collected these *INITBallot*s,
 
 * `B(N0 INIT H33 R0)`
 * `B(N1 INIT H33 R1)`
