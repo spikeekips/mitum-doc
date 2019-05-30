@@ -6,22 +6,15 @@
 
 ## How MITUM works
 
-### ISAAC+
-
 * [ISAAC+ and Mechanism](ISAAC+-and-Mechanism.md)
-
-### Node Network
-* [Node State](ISAAC+-NodeState.md)
 * [Node Network](ISAAC+-NodeNetwork.md)
-* [JOINing Node Network](ISAAC+-JOIN.md)
+    * [Node State](ISAAC+-NodeState.md)
+    * [JOINing Node Network](ISAAC+-JOIN.md)
 
-### Stages: Consensus Process
 * [Stages](ISAAC+-Consensus-Stages.md)
-* [INIT Stage](ISAAC+-Consensus-Stage-INIT.md)
-* [SIGN Stage](ISAAC+-Consensus-Stage-SIGN.md)
-* [ACCEPT Stage](ISAAC+-Consensus-Stage-ACCEPT.md)
-
-### Out Of Consensus
+    * [INIT Stage](ISAAC+-Consensus-Stage-INIT.md)
+    * [SIGN Stage](ISAAC+-Consensus-Stage-SIGN.md)
+    * [ACCEPT Stage](ISAAC+-Consensus-Stage-ACCEPT.md)
 
 * [Sync](ISAAC+-Sync.md)
 
