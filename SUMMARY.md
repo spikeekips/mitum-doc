@@ -7,7 +7,7 @@
 
 ## How MITUM works
 * [MITUM Consensus](Consensus.md)
-* [ISAAC+ and Mechanism](Consensus.md)
+* [ISAAC+ and Mechanism](ISAAC+-and-Mechanism.md)
 
 ## Comparison
 * [Comparison](Consensus-Comparison.md)
