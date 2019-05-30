@@ -74,8 +74,8 @@ In the next, the detailed consensus mechanisms will be explained. For simple exp
 
 Faulty node is the failed or non-functioning node to the other nodes. This node,
 
-* Can be crashed,
-* Has the different states to other nodes,
-* reponses teh different acts to other nodes
+* Maybe crashed,
+* Or has the different states to other nodes,
+* Or reponses teh different acts to other nodes
 
 ---
