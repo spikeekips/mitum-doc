@@ -1,3 +1,3 @@
 # MITUM
 
-MITUM is blockchain
+*"Inveniet viam aut faciet"*
