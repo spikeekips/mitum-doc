@@ -12,17 +12,17 @@ ISAAC and ISAAC+ share the basic idaes and both of them is based on PBFT(Miguel 
 
 Traditionally PBFT has 4 phases, each phase represents how the incoming request from client reaches to the consensus.
 
-1.*Request*
-1.*Pre-Prepare*
-1.*Prepare*
-1.*Commit*
+1. *Request*
+1. *Pre-Prepare*
+1. *Prepare*
+1. *Commit*
 
 ISAAC and ISAAC+ has also similar 4 phases(in ISAAC+, it is called voting *Stage*),
 
-1.*INIT*
-1.*SIGN*
-1.*ACCPET*
-1.*ALL-CONFIRM*
+1. *INIT*
+1. *SIGN*
+1. *ACCPET*
+1. *ALL-CONFIRM*
 
 Each phase does have similar meaning.
 
