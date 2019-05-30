@@ -5,7 +5,6 @@
 * [Future Plan](Future-Plan.md)
 
 ## How MITUM works
-* [MITUM Consensus](Consensus.md)
 
 ### ISAAC+
 
