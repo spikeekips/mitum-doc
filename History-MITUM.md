@@ -1,7 +1,7 @@
 # Brief History Of MITUM
 
 * MITUM project was started in the spring of 2019
-* The many ideas of MITUM was started from [SEBAK](https://github.com/bosnet/sebak), but MITUM was written from entirely scratch.
+* The many ideas of MITUM was started from [SEBAK](https://github.com/bosnet/sebak), but MITUM was written entirely from scratch.
     - ISAAC consensus protocol
     - some of utilities
     - etc

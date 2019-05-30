@@ -1,23 +1,26 @@
 # MITUM Consensus: ISAAC+
 
-As explained in the brief history of MITUM, MITUM was started from [SEBAK](https://github.com/bosnet/sebak) and ISAAC consensus protocol was developed for SEBAK. The one of the major things which MITUM adopted from SEBAK is ISAAC consensus protocol. In the MITUM, the more advanced and patched version of ISAAC will be used, ISAAC+.
+As explained in the brief history of MITUM, MITUM was started from [SEBAK](https://github.com/bosnet/sebak) and ISAAC consensus protocol was developed for SEBAK. The one of the major things which MITUM adopted from SEBAK is ISAAC consensus protocol. In the MITUM, the more advanced and patched version of ISAAC will be used, we call it ISAAC+.
 
 ## ISAAC and ISAAC+
 
-ISAAC and ISAAC+ shares the basic idaes and both of them is based on PBFT(Miguel Castro and Babara Liskov at 1999, [Practical Byzantine Fault Tolerance](http://pmg.csail.mit.edu/papers/osdi99.pdf)). At the first time, ISAAC was based on FBA, but it changed it's way to PBFT. The centralized network shape of FBA(especially [SCP](https://www.stellar.org/papers/stellar-consensus-protocol.pdf)) does not fit the open and public consensus network.
+ISAAC and ISAAC+ share the basic idaes and both of them is based on PBFT(Miguel Castro and Babara Liskov at 1999, [Practical Byzantine Fault Tolerance](http://pmg.csail.mit.edu/papers/osdi99.pdf)). At the first time, ISAAC was based on FBA, but it changed it's way to PBFT. The centralized network shape of FBA(especially [SCP](https://www.stellar.org/papers/stellar-consensus-protocol.pdf)) does not fit to the open and public consensus network.
 
 ### Phases and Stages
+
 Traditionally PBFT has 4 phases, each phase represents how the incoming request from client reaches to the consensus.
+
 1. Request
-2. Pre-Prepare
-3. Prepare
-4. Commit
+1. Pre-Prepare
+1. Prepare
+1. Commit
 
 ISAAC and ISAAC+ has also similar 4 phases(in ISAAC+, it is called voting `Stage`),
+
 1. INIT
-2. SIGN
-3. ACCPET
-4. ALL-CONFIRM
+1. SIGN
+1. ACCPET
+1. ALL-CONFIRM
 
 Each phase does have similar meaning.
 
