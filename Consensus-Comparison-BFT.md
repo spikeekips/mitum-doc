@@ -4,7 +4,7 @@
 ## The Two generals Problem
 
 
-> This problem (first published in 1975 and given its name in 1978, [SOME CONSTRAINTS AND TRADEOFFS IN THE DESIGN OF NETWORK COMMUNICATIONS](http://hydra.infosys.tuwien.ac.at/teaching/courses/AdvancedDistributedSystems/download/1975_Akkoyunlu,%20Ekanadham,%20Huber_Some%20constraints%20and%20tradeoffs%20in%20the%20design%20of%20network%20communications.pdf)) describes a scenario where two generals are attacking a common enemy.
+> This problem (first published[^1] in 1975 and given its name in 1978) describes a scenario where two generals are attacking a common enemy.
 >
 > There is no way to guarantee the second requirement that each general be sure the other has agreed to the attack plan. Both generals will always be left wondering whether their last messenger got through.
 >
@@ -35,3 +35,6 @@
 * *PREPARE*
 * *COMMIT*
 * (*REPLY*)
+
+
+[^1]: [SOME CONSTRAINTS AND TRADEOFFS IN THE DESIGN OF NETWORK COMMUNICATIONS](http://hydra.infosys.tuwien.ac.at/teaching/courses/AdvancedDistributedSystems/download/1975_Akkoyunlu,%20Ekanadham,%20Huber_Some%20constraints%20and%20tradeoffs%20in%20the%20design%20of%20network%20communications.pdf)
