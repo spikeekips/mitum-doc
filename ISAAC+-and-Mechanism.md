@@ -49,8 +49,9 @@ As explained in the brief history of MITUM, MITUM was started from [SEBAK](https
 
 ISAAC+ shares also the limitations of PBFT, but ISAAC+ will fill the hole by the enginerring mechanisms and achieves, *safety* of state and *fault tolerance* in decentralized way.
 
-ISAAC and ISAAC+ share the basic idaes and both of them is based on PBFT(Miguel Castro and Babara Liskov at 1999, [Practical Byzantine Fault Tolerance](http://pmg.csail.mit.edu/papers/osdi99.pdf)). At the first time, ISAAC was based on FBA, but it changed it's way to PBFT. The centralized network shape of FBA(especially [SCP](https://www.stellar.org/papers/stellar-consensus-protocol.pdf)) does not fit to the open and public consensus network.
+ISAAC and ISAAC+ share the basic idaes and both of them is based on PBFT(Miguel Castro and Babara Liskov at 1999, [Practical Byzantine Fault Tolerance](http://pmg.csail.mit.edu/papers/osdi99.pdf)). At the first time, ISAAC was based on FBA, but it changed it's way to PBFT. The centralized network shape of FBA[^1] does not fit to the open and public consensus network.
 
+[^1]: Especially [SCP](https://www.stellar.org/papers/stellar-consensus-protocol.pdf).
 
 ## Limitations
 

@@ -70,6 +70,7 @@
     * [Bitcoin](Consensus-Comparison-Bitcoin.md)
     * [PBFT](Consensus-Comparison-PBFT.md)
     * [RBFT](Consensus-Comparison-RBFT.md)
+    * [POS and DPOS](Consensus-Comparison-POS-And-DPOS.md)
 
 * [Mechanism](Mechanism-Comparison.md)
 
