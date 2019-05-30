@@ -11,18 +11,18 @@
 
 * [ISAAC+ and Mechanism](ISAAC+-and-Mechanism.md)
 
-### Node Network
+#### Node Network
 * [Node State](ISAAC+-NodeState.md)
 * [Node Network](ISAAC+-NodeNetwork.md)
 * [JOINing Node Network](ISAAC+-JOIN.md)
 
-### Consensus Process
+#### Consensus Process
 * [Consensus Process](ISAAC+-Consensus-Process.md)
     * [INIT Stage](ISAAC+-Consensus-Process-INIT.md)
     * [SIGN Stage](ISAAC+-Consensus-Process-SIGN.md)
     * [ACCEPT Stage](ISAAC+-Consensus-Process-ACCEPT.md)
 
-### Out Of Consensus
+#### Out Of Consensus
 
 * [Sync](ISAAC+-Sync.md)
 
