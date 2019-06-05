@@ -16,9 +16,9 @@ Each voting state has the unique *ballot* types,
 
 * *Block* : last block state, usually *block* *height* will be used
 * *Round* : voting round, usually it starts from *0*
-* *Proposer* : *Proposer* node of *Block* and *Round*; naturally *Proposer* is one of *Validator Group*
+* *Proposer* : *Proposer* node of *Block* and *Round*; naturally *Proposer* is one of *Active Suffrage Group*
 
-Like *Proposer*, nodes in *Validator Group* also should be selected by the specific block height and the round.
+Like *Proposer*, nodes in *Active Suffrage Group* also should be selected by the specific block height and the round.
 
 ### SIGNBallot
 

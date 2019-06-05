@@ -10,8 +10,8 @@
 * [ISAAC+ and Mechanism](ISAAC+-and-Mechanism.md)
 * [Node Network](ISAAC+-NodeNetwork.md)
     * [Node State](ISAAC+-NodeState.md)
-    * [Consensus Group](ISAAC+-Consnsus-Group.md)
-    * [Validator Group](ISAAC+-Validator-Group.md)
+    * [Suffrage Group](ISAAC+-Suffrage-Group.md)
+    * [Active Suffrage Group](ISAAC+-ActiveSuffrage-Group.md)
     * [Messaging](ISAAC+-Messaging.md)
 
 * [Seal](Seal.md)
@@ -19,11 +19,11 @@
     * [Ballot](Ballot.md)
     * [Transaction](Transaction.md)
 
-* [Stages](ISAAC+-Consensus-Stages.md)
-    * [JOIN](ISAAC+-Consensus-JOIN.md)
-    * [INIT Stage](ISAAC+-Consensus-Stage-INIT.md)
-    * [SIGN Stage](ISAAC+-Consensus-Stage-SIGN.md)
-    * [ACCEPT Stage](ISAAC+-Consensus-Stage-ACCEPT.md)
+* [Stages](ISAAC+-Stages.md)
+    * [JOIN](ISAAC+-JOIN.md)
+    * [INIT Stage](ISAAC+-Stage-INIT.md)
+    * [SIGN Stage](ISAAC+-Stage-SIGN.md)
+    * [ACCEPT Stage](ISAAC+-Stage-ACCEPT.md)
 
 * [Voting](ISAAC+-Voting.md)
 * [Sync](ISAAC+-Sync.md)

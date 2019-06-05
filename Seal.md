@@ -26,4 +26,4 @@ In MITUM there are several built-in seals,
 
 ## Block Related Seals
 
-* *BlockProof* : When node tries to join node network and it requests the last blocks and it's proof to the nodes of Consensus Group.
+* *BlockProof* : When node tries to join node network and it requests the last blocks and it's proof to the nodes of Suffrage Group.
