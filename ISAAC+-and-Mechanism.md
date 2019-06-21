@@ -65,7 +65,7 @@ In the next, the detailed consensus mechanisms will be explained. For simple exp
     - `[N₀ N₁ N₂ N₃]`
 * All the nodes is the node of *Suffrage Group* and *Active Suffrage Group*
     - *Suffrage Group* : `[N₀ N₁ N₂ N₃]`
-    - *Active Suffrage Group* : `[N₀ N₁ N₂ N₃]`
+    - *Active Suffrage Group* : `[N₀ N₁ N₂]`
 * Every node can receive the transactions from outside of the network
 * Each node is very closely connected with the others : low network latency
 
