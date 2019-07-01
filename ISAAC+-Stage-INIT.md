@@ -1,6 +1,6 @@
 # INIT Stage
 
-In *INIT* stage, node tries to start next block or new round. After *init* agreement between *suffrage group*, node will start consensus for next block or next round. Unlike the other stages are based on *active suffrage group*, *INIT* stage is based on *suffrage group*, it means, moving to next block or next round should be agreed between nodes in *suffrage group*.
+In *INIT* stage, node tries to start next block or new round. After *init* agreement between *suffrage group*, node can join and start consensus process for next block or next round. The other stages are based on *active suffrage group*, but *INIT* stage is based on *suffrage group*, it means, moving to next block or next round should be agreed between nodes in *suffrage group*.
 
 ---
 ***ROUND*** :
@@ -8,7 +8,7 @@ In *INIT* stage, node tries to start next block or new round. After *init* agree
 In isaac+, there is only one voting for same block and same round at the time in entire network. If current block is `H33` and node starts consensus for it,
 
 1. Node starts round, `R0` for `H33`.
-1. If consensus reached in *suffrage group*, node starts new round, `R0-H34`; `H34` will be the newly created block.
+1. If consensus reached in *suffrage group*, node starts new round, `R0-H33`; `H33` is the last stored block.
 1. If consensus failed, node start next round for `R1-H33`.
 
 Node retries consensus by increasing round.

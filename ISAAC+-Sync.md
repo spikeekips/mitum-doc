@@ -1,5 +1,7 @@
 # Sync
 
+> Sync should be faster than agreement.
+
 If node notices the global state is different from node itself, node should try to sync it's block state to global's. In ISAAC+, syncing process is extremely simple. There are some differences in various sync cases, but basically node requests the block state from the other nodes of *Suffrage Group*. The node outside *Suffrage Group* can not request the block data from *Suffrage Group* directly, but the MITUM API server or other services can be used.
 
 Simply the basic process is,
