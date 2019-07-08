@@ -15,7 +15,7 @@ Each voting state has the unique *ballot* types,
 *INITBallot* should have these informations,
 
 * *Block* : last block state, usually *block* *height* will be used
-* *Round* : voting round, usually it starts from *0*
+* *Round* : voting round, usually it starts from the last block
 * *Proposer* : *Proposer* node of *Block* and *Round*; naturally *Proposer* is one of *Acting Suffrage Group*
 
 Like *Proposer*, nodes in *Acting Suffrage Group* also should be selected by the specific block height and the round.

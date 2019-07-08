@@ -15,7 +15,7 @@ ISAAC+ is also based these rules and has some additional rules,
 * Each node can validate the proposal and vote the state result of proposal
 * If acting round is failed to get agreement, goes to next round
 * To start new round, all the nodes in *Acting Suffrage Group* should agree to INIT ballot
-* If failed to agree to INIT ballot, next round will be initialized to 0
+* If failed to agree to INIT ballot, next round will be initialized to the round of last block
 
 Like *PBFT*, the recommended agreement threshold within *Acting Suffrage Group* is at least 67%.
 
