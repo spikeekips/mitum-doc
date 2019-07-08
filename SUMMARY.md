@@ -11,7 +11,7 @@
 * [Node Network](ISAAC+-NodeNetwork.md)
     * [Node State](ISAAC+-NodeState.md)
     * [Suffrage Group](ISAAC+-Suffrage-Group.md)
-    * [Active Suffrage Group](ISAAC+-ActiveSuffrage-Group.md)
+    * [Acting Suffrage Group](ISAAC+-ActingSuffrage-Group.md)
     * [Messaging](ISAAC+-Messaging.md)
 
 * [Seal](Seal.md)

@@ -12,9 +12,9 @@ Every node can join *Suffrage Group*, but there are some requirements and steps.
         - fast-enough network; network should be fast and under stable environment
     - etc : additional conditions could be made by *Suffrage Group*
 
-* Node should vote on the active *Proposal* in each round and can broadcast *SIGNBallot* to the current *Suffrage Group* within the given time(before *ALL-CONFIRM* stage)
+* Node should vote on the acting *Proposal* in each round and can broadcast *SIGNBallot* to the current *Suffrage Group* within the given time(before *ALL-CONFIRM* stage)
 * After the given time(at this time, almost 1 month?), node gathers the enough agreement signing from nodes of *Suffrage Group* and proposes the entrance request to the node network.
-* The entrance request is validated by *Active Suffrage Group* and if passed, the node can be join *Suffrage Group*
+* The entrance request is validated by *Acting Suffrage Group* and if passed, the node can be join *Suffrage Group*
 * The newly joined node in *Suffrage Group* can participate after 50 blocks from the block it joins.
 
 ## Leaving Suffrage Group
@@ -48,9 +48,9 @@ We can assume this situations,
 
 * `N₀` can check that something wrong.
 * `N₀` checks, `H135` is over threshold.
-* `N₀` can find which nodes are in *Active Suffrage Group* of `H135`.
-* `N₀` can check `[N₁ N₂ N₃]` is the valid nodes of *Active Suffrage Group* of `H135`
+* `N₀` can find which nodes are in *Acting Suffrage Group* of `H135`.
+* `N₀` can check `[N₁ N₂ N₃]` is the valid nodes of *Acting Suffrage Group* of `H135`
 * Eventually `N₀` can know it's block state is far from the global block state, `H135`.
 * `N₀` moves to *sync*.
 
-Without `50` block interval, `N₀` can not check whether `[N₁ N₂ N₃]` are in *Active Suffrage Group* of `H135`. To check which nodes are in `H135`, `N₀` easily check the entire nodes of *Suffrage Group* of `H85`(`135 - 50`).
+Without `50` block interval, `N₀` can not check whether `[N₁ N₂ N₃]` are in *Acting Suffrage Group* of `H135`. To check which nodes are in `H135`, `N₀` easily check the entire nodes of *Suffrage Group* of `H85`(`135 - 50`).

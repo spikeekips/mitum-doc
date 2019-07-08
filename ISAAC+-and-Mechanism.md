@@ -13,11 +13,11 @@ ISAAC+ is also based these rules and has some additional rules,
 * Consensus can be reached through the majority of voting
 * Each round has proposer(leader) and it propose proposal(the transactions for next block)
 * Each node can validate the proposal and vote the state result of proposal
-* If active round is failed to get agreement, goes to next round
-* To start new round, all the nodes in *Active Suffrage Group* should agree to INIT ballot
+* If acting round is failed to get agreement, goes to next round
+* To start new round, all the nodes in *Acting Suffrage Group* should agree to INIT ballot
 * If failed to agree to INIT ballot, next round will be initialized to 0
 
-Like *PBFT*, the recommended agreement threshold within *Active Suffrage Group* is at least 67%.
+Like *PBFT*, the recommended agreement threshold within *Acting Suffrage Group* is at least 67%.
 
 
 ### Phases and Stages
@@ -63,9 +63,9 @@ In the next, the detailed consensus mechanisms will be explained. For simple exp
 
 * 4 nodes : one faulty node can be possible(according to `3f+1` rule)
     - `[N₀ N₁ N₂ N₃]`
-* All the nodes is the node of *Suffrage Group* and *Active Suffrage Group*
+* All the nodes is the node of *Suffrage Group* and *Acting Suffrage Group*
     - *Suffrage Group* : `[N₀ N₁ N₂ N₃]`
-    - *Active Suffrage Group* : `[N₀ N₁ N₂]`
+    - *Acting Suffrage Group* : `[N₀ N₁ N₂]`
 * Every node can receive the transactions from outside of the network
 * Each node is very closely connected with the others : low network latency
 
@@ -82,7 +82,7 @@ Faulty node is the failed or non-functioning node to the other nodes. This node,
 
 ## Node can be Faulty Node
 
-Every node can be faulty node, whether it is in *Active Suffrage Group*, *Suffrage Group* or even not in both.
+Every node can be faulty node, whether it is in *Acting Suffrage Group*, *Suffrage Group* or even not in both.
 
 ### Common Faulty Node
 
@@ -95,7 +95,7 @@ Every node can be faulty node, whether it is in *Active Suffrage Group*, *Suffra
 * If it does not serve *BlockProof*,
 * If it serves the invalid *BlockProof*,
 
-### Faulty Node in *Active Suffrage Group*
+### Faulty Node in *Acting Suffrage Group*
 
 * If it is *proposer* and it does not broadcast *proposal*,
 * If it does not broadcast *ballot*s,

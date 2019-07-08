@@ -16,7 +16,7 @@ Node should be request from lower block to higher. In fact, the order of block i
 
 ## Completing Catching Up
 
-If node does complete to catch up the latest block state, node can join the consensus. To do it safely, node can wait for incoming agreement of the nodes in *Active Suffrage Group*. Node keeps watching the active voting stage and also should be ready to store the active *proposal*. After node verifies the *ACCEPT* agreement, node will join the network.
+If node does complete to catch up the latest block state, node can join the consensus. To do it safely, node can wait for incoming agreement of the nodes in *Acting Suffrage Group*. Node keeps watching the acting voting stage and also should be ready to store the acting *proposal*. After node verifies the *ACCEPT* agreement, node will join the network.
 
 The detailed process will be like this,
 
@@ -45,7 +45,7 @@ The detailed process will be like this,
 * After `H131` is finished in global, `N₀` also stores `H131`.
 * `N₀` waits the *INITBallot* for `H131`.
 * *INITBallot*s for `H131` reaches agreement, `N₀` also waits *proposal* for `H131`.
-* `N₀` validates the *proposal* and waits the incoming *SIGN* and *ACCEPTBallot*s to reach agreement like other nodes of *Active Suffrage Group*.
+* `N₀` validates the *proposal* and waits the incoming *SIGN* and *ACCEPTBallot*s to reach agreement like other nodes of *Acting Suffrage Group*.
 * Naturally `N₀` can finish `H132`(the next block of `H131`) and ready to join again.
-* If `N₀` is selected as one of *Active Suffrage Group*, `N₀` starts new round for `H132`.
+* If `N₀` is selected as one of *Acting Suffrage Group*, `N₀` starts new round for `H132`.
 

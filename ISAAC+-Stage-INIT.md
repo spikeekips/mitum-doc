@@ -1,6 +1,6 @@
 # INIT Stage
 
-In *INIT* stage, node tries to start next block or new round. After *init* agreement between *suffrage group*, node can join and start consensus process for next block or next round. The other stages are based on *active suffrage group*, but *INIT* stage is based on *suffrage group*, it means, moving to next block or next round should be agreed between nodes in *suffrage group*.
+In *INIT* stage, node tries to start next block or new round. After *init* agreement between *suffrage group*, node can join and start consensus process for next block or next round. The other stages are based on *acting suffrage group*, but *INIT* stage is based on *suffrage group*, it means, moving to next block or next round should be agreed between nodes in *suffrage group*.
 
 ---
 ***ROUND*** :
