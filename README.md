@@ -1,12 +1,9 @@
 # MITUM
 
-{% hint style="warning" %}
-This document still in heavy development.
-{% endhint %}
+| This document still in heavy development. |
+| --- |
 
-{% hint style="info" %}
-This documentation is published on https://mitum.gitbook.io .
-{% endhint %}
+Documentation is published on https://mitum.gitbook.io .
 
 
 ![MITIM](./images/mitum-logo-1000.png "MITUM")
