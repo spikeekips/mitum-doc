@@ -13,7 +13,9 @@
 
 * [ISAAC+](isaac+-introduction.md)
 * [ISAAC+: Compare with classic PBFT](isaac+-compare-with-classic-pbft.md)
-* [Mechanism: How ISAAC+ Works](mechanism-how-isaac+-works.md)
+* [Node States](node-states.md)
+* [Voting Stages](voting-stages.md)
+* [How ISAAC+ Works](how-isaac+-works.md)
 * [Weakness and Limitations](weakness-and-limitations.md)
 * [Contest: Simulating Consensus Processes](contest.md)
 
