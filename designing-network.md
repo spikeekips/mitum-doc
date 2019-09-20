@@ -1,4 +1,4 @@
-# mitum: Designing Network
+# Designing Network
 
 mitum is designed for general purpose blockchain. To fill this requirement, policy and data of mitum can be configurable and manageable by practical way. The network designer will design his/her network in 2 parts:
 

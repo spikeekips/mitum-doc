@@ -1,4 +1,4 @@
-# mitum: How mitum Works
+# How mitum Works
 
 ## TL;DR
 
