@@ -11,7 +11,7 @@
 
 ## Consensus Protocol: ISAAC+
 
-* [ISAAC+: Introduction](isaac+-introduction.md)
+* [ISAAC+](isaac+-introduction.md)
 * [ISAAC+: Compare with classic PBFT](isaac+-compare-with-classic-pbft.md)
 * [Mechanism: How ISAAC+ Works](mechanism-how-isaac+-works.md)
 * [Weakness and Limitations](weakness-and-limitations.md)
