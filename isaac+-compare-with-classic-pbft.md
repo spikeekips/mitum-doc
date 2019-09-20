@@ -45,7 +45,7 @@ Each stage does have similar meaning.
 
 * *ACCEPT*:
     * Only members of acting suffrage group participate.
-    * similar to the *Prepare*, when *ACCEPT* stage gets agreement, the new block is ready to established and ready to move next block.
+    * Similar to the *Prepare*, when *ACCEPT* stage gets agreement, the new block is ready to established and ready to move next block.
 
 Unlike the classic PBFT, ISAAC+ will establish the new block at the *INIT* stage by all the member of suffrage group, this means all the members of suffrage group should agree the new block for establishing it.
 

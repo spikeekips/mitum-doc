@@ -48,7 +48,7 @@ This example situation will be applied throughout this document.
 ### `m9` is booted
 
 * After `m9` are booted, each node will check it's current block state and environment to join the network. At this time, node also tries to check the global network consensus state, which block height and round are  proceeded currently.
-* When everything is ok for joining consensus, `m9` joins consensus.
+* When everything is OK for joining consensus, `m9` joins consensus.
 * The next consensus voting is for the next block, which has the height, `H33` and it's round is `R0`.
 
 ### New data message received

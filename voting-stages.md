@@ -79,9 +79,9 @@ For example,
 * acting suffrage group members: `m0`, `m1`, `m2`, `m3`
 * proposer: `m0`
 * threshold for majority: 3 of 4
-* proposal: P0
+* proposal: `P0`
 
-Voting for the round, R0
+Voting for the round, `R0`
 
 | node | stage | block |
 | ---- | ---- | ---- |

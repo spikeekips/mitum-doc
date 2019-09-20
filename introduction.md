@@ -22,7 +22,7 @@ Basically mitum can provides these main features.
 
 * DATA: All the data is stored by hierarchical tree structure(AVL tree). It makes to store and search data efficiently.
 
-* DATA: mitum does only rely on the data in the established data in block. The volitile data in node will not be used for consensus process and most of important data will be saved in block, so it can be updated by agreement by consensus protocol.
+* DATA: mitum does only rely on the data in the established data in block. The volatile data in node will not be used for consensus process and most of important data will be saved in block, so it can be updated by agreement by consensus protocol.
 
 * NETWORK: the basic networking protocol is UDP for consensus process . By the nature of UDP, there is no need to keep or check  the connection between consensus nodes.
 

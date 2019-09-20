@@ -10,7 +10,7 @@ This problem is not native to ISAAC+, most of implementation of PBFT suffers sam
 
 To solve this problem, ISAAC+ has the suffrage group. Network designer designs it's network at the first time, the designer will set the several policies for new member for suffrage group like:
 
-* Low letwork latency
+* Low network latency
 * Enough computing power
 * etc.
 

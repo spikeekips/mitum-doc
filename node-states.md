@@ -8,7 +8,7 @@ Node in mitum network has 5 different state.
 * *Consensus*
 * *Stopped*
 
-The basic lifecycle of node state is:
+The basic life cycle of node state is:
 
 ```
 Booting -> Syncing -> Joining -> Consensus -> Stopped

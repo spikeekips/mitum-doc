@@ -17,7 +17,7 @@ Node owner calls his/her node as home node.
     * Node, not in suffrage group can not participate the consensus process.
 * The new block is established by the agreement of suffrage group.
 * This member also have the privilege to vote on the decision for network policies.
-* The member of this group is not hardcoded or managed by another system. The member of this group can be decided by the agreement of network.
+* The member of this group is not hard-coded or managed by another system. The member of this group can be decided by the agreement of network.
 
 ### Acting Suffrage Group
 
@@ -46,7 +46,7 @@ Faulty node(or failed node) is the failed or malfunctioning node. Node can be fa
 
 * Maybe crashed, or
 * has the different states to other nodes, or
-* reponses teh different acts to other nodes, etc.
+* responses the different acts to other nodes, etc.
 
 Any node can be faulty node, whether it is acting suffrage group, suffrage group or even not in both.
 
