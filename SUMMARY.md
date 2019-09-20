@@ -16,7 +16,7 @@
 * [Node States](node-states.md)
 * [Voting Stages](voting-stages.md)
 * [How ISAAC+ Works](how-isaac+-works.md)
-* [Weakness and Limitations](weakness-and-limitations.md)
+* [Weakness and Limitations](isaac+-weakness-and-limitations.md)
 * [Contest: Simulating Consensus Processes](contest.md)
 
 ## Getting Started
@@ -33,3 +33,7 @@
 ## Contribution
 
 * [Contribution](contribution.md)
+
+## Glossary
+
+* [Glossary](glossary.md)
