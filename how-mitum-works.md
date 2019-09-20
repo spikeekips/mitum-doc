@@ -4,8 +4,6 @@
 
 As described in the section, "[Introduction](/)", the mitum network consists of the multiple consensus nodes.
 
-
-
 {% hint style="info" %}
 Standalone mode:
 
