@@ -21,14 +21,7 @@
 
 ## Getting Started
 
-* ~~Preparation~~
-* ~~Designing network~~
-* ~~Composing network~~
-* ~~Deploying network~~
-
 ## Future Plan
-
-* ~~Data Privacy~~
 
 ## Contribution
 
