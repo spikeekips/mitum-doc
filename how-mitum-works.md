@@ -7,7 +7,9 @@ As described in the section, "[Introduction](/)", the mitum network consists of 
 
 
 {% hint style="info" %}
-Standalone mode: For development or research purpose, you can compose the network with only one node. In standalone mode, every operation will be same, even with the consensus process.
+Standalone mode:
+
+For development or research purpose, you can compose the network with only one node. In standalone mode, every operation will be same, even with the consensus process.
 {% endhint %}
 
 As mitum is blockchain, basically mitum network tries to store the incoming data by trusted way. This is simple process for new data.
