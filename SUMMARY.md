@@ -1,11 +1,12 @@
 # Summary
 
-## [Introduction](introduction.md)
+## How mitum works
 
-## [How mitum works](how-mitum-works.md)
+* [How mitum works](how-mitum-works.md)
 
-## [Network](network.md)
+## Network
 
+* [Network](network.md)
 * [Designing Network](designing-network.md)
 
 ## Consensus Protocol: ISAAC+
@@ -26,4 +27,6 @@
 
 * ~~Data Privacy~~
 
-## [Contribution](contribution.md)
+## Contribution
+
+* [Contribution](contribution.md)
