@@ -72,3 +72,5 @@ html_theme_options = {
     'includehidden': True,
     'titles_only': False
 }
+
+master_doc = 'contents'
