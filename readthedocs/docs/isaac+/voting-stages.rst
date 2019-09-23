@@ -90,14 +90,14 @@ For example,
 
 Voting for the round, ``R0``
 
- =======    ========    =======
- node       stage       block
- =======    ========    =======
- ``m0``     *SIGN*      ``H0``
- ``m1``     *SIGN*      ``H0``
- ``m2``     *SIGN*      ``H1``
- ``m3``     *SIGN*      ``H1``
- =======    ========    =======
+=======    ========    =======
+node       stage       block
+=======    ========    =======
+``m0``     *SIGN*      ``H0``
+``m1``     *SIGN*      ``H0``
+``m2``     *SIGN*      ``H1``
+``m3``     *SIGN*      ``H1``
+=======    ========    =======
 
 This *SIGN* voting fails to get agreement,
 * ``H0``: ``m0``, ``m1``; under threshold 3
