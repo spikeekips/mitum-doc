@@ -7,6 +7,10 @@ MITUM
 .. note::
     This document still in heavy development.
 
+
+| This document still in heavy development. |
+| --- |
+
 Documentation is published on https://mitum-doc.readthedocs.io/en/proto2/ .
 
 
