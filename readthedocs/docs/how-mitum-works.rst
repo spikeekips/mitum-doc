@@ -7,7 +7,7 @@ How mitum Works
 TL;DR
 ============================================================
 
-As described in the section, "[Introduction](/)", the mitum network consists of the multiple consensus nodes.
+As described in the section, ":doc:`introduction`", the mitum network consists of the multiple consensus nodes.
 
 .. seealso::
 
