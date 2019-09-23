@@ -16,4 +16,5 @@ code, .rst-content tt, .rst-content code {
     border: none;
     font-size: 87%;
     color: #5d9f00 !important;
+    background-color: transparent;
 }
