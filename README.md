@@ -4,7 +4,7 @@ MITUM
 .. note::
     This document still in heavy development.
 
-Documentation is published on https://mitum.gitbook.io .
+Documentation is published on https://mitum-doc.readthedocs.io/en/proto2/ .
 
 
 ![MITUM](./images/mitum-logo-1000.png "MITUM")
