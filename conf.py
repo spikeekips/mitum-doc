@@ -74,3 +74,7 @@ html_theme_options = {
 }
 
 master_doc = 'contents'
+
+exclude_patterns = [
+    'README.*',
+]
