@@ -1,6 +1,9 @@
 MITUM
 ============================================================
 
+[![Documentation Status](https://readthedocs.org/projects/mitum-doc/badge/?version=proto2)](https://mitum-doc.readthedocs.io/en/latest/?badge=proto2)
+
+
 .. note::
     This document still in heavy development.
 
