@@ -73,7 +73,7 @@ html_theme_options = {
     'titles_only': False
 }
 
-master_doc = 'contents'
+master_doc = 'index'
 
 exclude_patterns = [
     'README.*',
