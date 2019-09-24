@@ -39,9 +39,9 @@ When *INIT* voting is finished, the new proposer of newly selected acting suffra
 
 .. note::
 
-    Node is booted and previous block is already established. Does *INIT* ballot should contain new block and previous round information?
+    Q. Node is booted and previous block is already established. Does *INIT* ballot should contain new block and previous round information?
 
-        TL;DR Yes. Basically *INIT* stage works for verifying the previous voting result and finally establishing it. If previous voting is already established, the new block and it's round information will be used the new starting round is based on the valid block or not.
+    A. TL;DR Yes. Basically *INIT* stage works for verifying the previous voting result and finally establishing it. If previous voting is already established, the new block and it's round information will be used the new starting round is based on the valid block or not.
 
 
 Proposal
@@ -142,9 +142,9 @@ The result of voting:
 
 .. note::
 
-    The threshold, 7 is different from 3, threshold of acting suffrage group, why?
+    Q. The threshold, 7 is different from 3, threshold of acting suffrage group, why?
 
-    The default threshold percent is 67%, this means at least 2/3 nodes should agree on the same result. The 7 is 67% of the number of all the suffrage group members.
+    A. The default threshold percent is 67%, this means at least 2/3 nodes should agree on the same result. The 7 is 67% of the number of all the suffrage group members.
 
 
 The suffrage group agreed on ``H0`` and ``H0`` will be established as the new block, and then newly selected acting suffrage group will start new round for next block.

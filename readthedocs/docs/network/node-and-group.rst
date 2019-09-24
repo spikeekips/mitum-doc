@@ -28,6 +28,7 @@ Acting Suffrage Group
 * The member of acting suffrage group will be tested and challenged, whether it works correctly without problem by the other suffrage group members.
 
 .. note::
+
     If some node in acting suffrage group members works weirdly, it may be exiled by network policy.
 
 Proposer

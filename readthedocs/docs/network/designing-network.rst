@@ -40,6 +40,7 @@ In mitum these kind of principles, most of policies are managed in block like da
 * Policy can be updated by consensus like data.
 
 .. note::
+
     The initial policy is set by the network designer.
 
 Model
