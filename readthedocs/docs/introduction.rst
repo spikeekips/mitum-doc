@@ -20,7 +20,7 @@ Basically mitum can provides these main features.
 
 * **CONSENSUS**: Due to ISAAC+, mitum can process huge amount of messages, like currency transactions, consensus ballots, or any kind of messages for agreement. 
 
-* **DATA PRIVACY**: For privacy of user, mitum supports untraceable account. Basically thanks to the consensus process, accounts can be easily traced by anyone, who did fund it, who sent to it, whom it sent, and it's related data too. But unlike zcash, or hyperledge, mitum tries to support the privacy by transparent account. Transparent account be created by the legitimate account, but hides which source account makes it. It breaks the link from the originated source account. 
+* **DATA PRIVACY**: For privacy of user, mitum supports untraceable account. Basically thanks to the consensus process, accounts can be easily traced by anyone, who did fund it, who sent to it, whom it sent, and it's related data too. But unlike zcash, or hyperledge, mitum tries to support the privacy by transparent account. Transparent account can be created by the legitimate account, but hides which source account makes it. It breaks the link from the originated source account. 
 
 * **DATA**: All the data is stored by hierarchical tree structure(AVL tree). It makes to store and search data efficiently.
 
