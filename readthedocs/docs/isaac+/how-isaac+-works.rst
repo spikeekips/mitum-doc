@@ -19,7 +19,7 @@ Voting occurs by round. For example, latest block is ``H33``,
     - Failed to get agreement: *INIT* : ``H34``, ``R1``
 #. *SIGN* : ``H34``, ``R1``
 #. *ACCEPT* : ``H34``, ``R1``
-#. new *INIT* : ``H35``, ``R0``
+#. New *INIT* : ``H35``, ``R0``
 
 Like the example, round is unique within new block voting.
 

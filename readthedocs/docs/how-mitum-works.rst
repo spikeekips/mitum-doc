@@ -28,7 +28,7 @@ The important things in the process are,
 * All the incoming message is validated by consensus nodes
 * Only agreed data is established(stored) in the block
 
-This is the normal process of PBFT-based blockchain. mitum follows the classic scenario of PBFT.
+This is the normal process of PBFT-based blockchain. Mitum follows the classic scenario of PBFT.
 
 Uncompressed Version
 ============================================================

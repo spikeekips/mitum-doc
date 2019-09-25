@@ -2,7 +2,7 @@
 Introduction
 ============================================================
 
-mitum is a general privacy blockchain with flexible and resilient way. Mitum can be used for various kind of purposes, public and private blockchain like  cryptocurrency network, data-centric blockchain for arbitrary data, or secure anonymity voting system, etc. 
+Mitum is a general privacy blockchain with flexible and resilient way. Mitum can be used for various kind of purposes, public and private blockchain like  cryptocurrency network, data-centric blockchain for arbitrary data, or secure anonymity voting system, etc.
 
 Basically mitum can provides these main features.
 
