@@ -61,6 +61,10 @@ Welcome to mitum's documentation!
             background: inherit;
         }
     }
+
+    .wy-nav-content {
+        margin: 0 auto;
+    }
     </style>
 
     <script type=text/javascript>
