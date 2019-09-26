@@ -6,8 +6,11 @@
 Welcome to mitum's documentation!
 =================================
 
+.. image:: docs/images/mitum-logo-1000.png
+   :scale: 50 %
+   :align: center
+
 .. toctree::
-   :hidden:
    :maxdepth: 1
    :caption: Introduction
 
@@ -17,7 +20,6 @@ Welcome to mitum's documentation!
 
 
 .. toctree::
-   :hidden:
    :maxdepth: 1
    :caption: ISAAC+
 
@@ -31,7 +33,6 @@ Welcome to mitum's documentation!
 
 
 .. toctree::
-   :hidden:
    :maxdepth: 1
    :caption: Network
 
@@ -42,7 +43,6 @@ Welcome to mitum's documentation!
 
 
 .. toctree::
-   :hidden:
    :maxdepth: 1
    :caption: About Project
 
@@ -50,7 +50,20 @@ Welcome to mitum's documentation!
    docs/contribution
 
 
-.. image:: docs/images/mitum-logo-1000.png
-
-
 .. include: common.rst
+
+.. this js scrript will hide side menu from the index page.
+.. raw:: html
+
+    <style type="text/css">
+    @media screen and (min-width: 1100px) {
+        .wy-nav-content-wrap {
+            background: inherit;
+        }
+    }
+    </style>
+
+    <script type=text/javascript>
+        $('nav.wy-nav-side').hide();
+        $('section.wy-nav-content-wrap').css('marginLeft', 0);
+    </script>
