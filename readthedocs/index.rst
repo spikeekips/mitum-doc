@@ -67,7 +67,7 @@ Welcome to mitum's documentation!
     }
     </style>
 
-    <script type=text/javascript>
+    <script type="text/javascript">
         $('nav.wy-nav-side').hide();
         $('section.wy-nav-content-wrap').css('marginLeft', 0);
     </script>
