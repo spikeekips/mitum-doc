@@ -30,6 +30,7 @@ Welcome to mitum's documentation!
    docs/isaac+/node-states
    docs/isaac+/voting-stages
    docs/isaac+/isaac+-weakness-and-limitations
+   docs/isaac+/contest
 
 
 .. toctree::
