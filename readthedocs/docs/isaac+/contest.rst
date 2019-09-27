@@ -69,7 +69,7 @@ With this config file, contest can be run like this:
 
 The output will be:
 
-.. code-block::
+.. code-block:: none
    :linenos:
 
     ...
