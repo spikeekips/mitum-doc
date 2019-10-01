@@ -19,3 +19,22 @@ code, .rst-content tt, .rst-content code {
     color: #5d9f00 !important;
     background-color: transparent;
 }
+
+.rst-content dl:not(.docutils) dt {
+    width: 100%;
+    background-color: transparent;
+    border-top: none;
+}
+
+
+.rst-content dl:not(.docutils) dt code span::after {
+    content: ":"
+}
+
+.admonition {
+    background-color: transparent !important;
+    border: 1px solid #6ab0de;
+}
+
+.admonition.error { border: 1px solid #f29f97; }
+.admonition.warning { border: 1px solid #ffedcc; }
