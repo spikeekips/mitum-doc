@@ -31,6 +31,7 @@ release = 'proto2'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+    'sphinx.ext.todo',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -78,3 +79,5 @@ master_doc = 'index'
 exclude_patterns = [
     'README.*',
 ]
+
+todo_include_todos = True

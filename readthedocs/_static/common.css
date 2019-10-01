@@ -38,3 +38,4 @@ code, .rst-content tt, .rst-content code {
 
 .admonition.error { border: 1px solid #f29f97; }
 .admonition.warning { border: 1px solid #ffedcc; }
+.admonition.admonition-todo { border: 1px solid #f0b37e; }
