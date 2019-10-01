@@ -1,0 +1,14 @@
+global:
+  policy:
+      threshold: 67
+      interval_broadcast_init_ballot_in_join: 5s
+      timeout_wait_vote_result_in_join: 6s
+      timeout_wait_ballot: 6s
+
+condition:
+    all:
+        node_state:
+            - current_state="booting" and new_state="join"
+
+        new_block:
+            - m="new block created" and block.height>=12 and block.round=0
