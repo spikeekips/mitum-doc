@@ -1,5 +1,5 @@
 ============================================================
-Case: Custom Policy
+Custom Policy
 ============================================================
 
 .. literalinclude:: config/custom-policy.yml

@@ -8,7 +8,7 @@ global:
 condition:
     all:
         node_state:
-            - current_state="booting" and new_state="join"
+            - current_state="booting" and new_state="joining"
 
         new_block:
             - m="new block created" and block.height>=12 and block.round=0

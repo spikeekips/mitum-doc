@@ -16,7 +16,7 @@ For example, this is simple contest configuration file:
     condition:
         all:
             node_state:
-                - current_state="booting" AND new_state="join"
+                - current_state="booting" AND new_state="joining"
 
             new_block:
                 - m="new block created" AND block.height>=12
@@ -25,11 +25,11 @@ This config will check the 2 conditions on *all* nodes from json **log messages*
 
 .. code-block:: sql
 
-    current_state="booting" AND new_state="join"
+    current_state="booting" AND new_state="joining"
 
 This expression is from SQL-like, especially it is similar with a part of
 *WHERE* expression of SQL. This expression will check if the state of node changes
-from ``booting`` to ``join``.
+from ``booting`` to ``joining``.
 
 .. code-block:: sql
 
@@ -89,43 +89,43 @@ The output will be:
       "m": "new block created"
     }
     ================================================================================
-    query: (and:(node = [n2]), (current_state = [booting]), (new_state = [join]))
+    query: (and:(node = [n2]), (current_state = [booting]), (new_state = [joining]))
     matched log:
     {
       "level": "info",
       "node": "n2",
       "current_state": "booting",
-      "new_state": "join",
+      "new_state": "joining",
       "m": "state changed"
     }
     ================================================================================
-    query: (and:(node = [n3]), (current_state = [booting]), (new_state = [join]))
+    query: (and:(node = [n3]), (current_state = [booting]), (new_state = [joining]))
     matched log:
     {
       "level": "info",
       "node": "n3",
       "current_state": "booting",
-      "new_state": "join",
+      "new_state": "joining",
       "m": "state changed"
     }
     ================================================================================
-    query: (and:(node = [n4]), (current_state = [booting]), (new_state = [join]))
+    query: (and:(node = [n4]), (current_state = [booting]), (new_state = [joining]))
     matched log:
     {
       "level": "info",
       "node": "n4",
       "current_state": "booting",
-      "new_state": "join",
+      "new_state": "joining",
       "m": "state changed"
     }
     ================================================================================
-    query: (and:(node = [n1]), (current_state = [booting]), (new_state = [join]))
+    query: (and:(node = [n1]), (current_state = [booting]), (new_state = [joining]))
     matched log:
     {
       "level": "info",
       "node": "n1",
       "current_state": "booting",
-      "new_state": "join",
+      "new_state": "joining",
       "m": "state changed"
     }
     ================================================================================

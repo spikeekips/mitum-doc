@@ -20,7 +20,7 @@ Condition
     condition:
         all:
             node_state:
-                - current_state = "booting" AND new_state = "join"
+                - current_state = "booting" AND new_state = "joining"
 
             new_block:
                 - m LIKE "new block created" AND block.height >= 12
@@ -65,7 +65,7 @@ Basically the section of condition field has these structure:
               --query stringArray   query
 
         $ contest query /tmp/contest.log \
-            --query 'current_state = "booting" AND new_state = "join"'
+            --query 'current_state = "booting" AND new_state = "joining"'
         ...
         {
           "level": "info",
@@ -141,18 +141,21 @@ The interesting expression is ``body.height``. The sub field can be defined as `
 
 In contest, these operators is supported:
 
-* ``=``
-* ``<``
-* ``>``
-* ``<=``
-* ``>=``
-* ``!=``
-* ``in``
-* ``not in``
-* ``like``
-* ``not like``
-* ``regexp``
-* ``not regexp``
+.. hlist::
+    :columns: 6
+
+    * ``=``
+    * ``<``
+    * ``>``
+    * ``<=``
+    * ``>=``
+    * ``!=``
+    * ``in``
+    * ``not in``
+    * ``like``
+    * ``not like``
+    * ``regexp``
+    * ``not regexp``
 
 .. seealso::
 

@@ -30,7 +30,7 @@ Node decides it's condition and transit it's state. For example:
 
     Booting -> Syncing ...
 
-* During Joining state, node finds it's block state is different from majority:
+* During *Joining* state, node finds it's block state is different from majority:
 
 ::
 
