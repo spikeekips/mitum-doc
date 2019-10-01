@@ -2,24 +2,11 @@
 Case: Custom Policy
 ============================================================
 
-.. code-block:: yaml
-   :linenos:
-   :emphasize-lines: 3,4,5
+.. literalinclude:: config/custom-policy.yml
+    :caption: `custom-policy.yml <https://github.com/spikeekips/mitum-doc/raw/proto2/readthedocs/docs/contest/config/custom-policy.yml>`_
+    :language: yaml
+    :linenos:
 
-    global:
-      policy:
-          threshold: 67
-          interval_broadcast_init_ballot_in_join: 5s
-          timeout_wait_vote_result_in_join: 6s
-          timeout_wait_ballot: 6s
-
-    condition:
-        all:
-            node_state:
-                - current_state="booting" and new_state="join"
-
-            new_block:
-                - m="new block created" and block.height>=12 and block.round=0
 
 In mitum, there are several factors for policy, these factors can control how mitum and consensus works.:
 

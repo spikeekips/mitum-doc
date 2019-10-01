@@ -22,7 +22,7 @@ Contest provides these features:
 
    /docs/contest/introduction
    /docs/contest/condition
-   /docs/contest/case-custom-policy
+   /docs/contest/cases
 
 
 .. note::
