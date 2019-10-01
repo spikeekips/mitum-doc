@@ -41,7 +41,6 @@ Run contest:
 
 .. code-block:: sh
    :linenos:
-   :caption: custom-policy.yml
 
     $ ./contest run custom-policy.yml \
         --log ./contest-sample \
