@@ -16,19 +16,19 @@ As described in the section, ":doc:`introduction`", the mitum network consists o
 
 As mitum is blockchain, basically mitum network tries to store the incoming data by trusted way. This is simple process for new data.
 
-1. New message is received by one of nodes in the network
-2. New message contains the user data
-3. Message and it's data are validated by the nodes
-4. Each node tries to get the agreement for the new message and it's data
-5. If nodes get agreement to store new data, the new data will be established in the next block
+1. New message is received by one of nodes in the network.
+2. New message contains the user data.
+3. Message and it's data are validated by the nodes.
+4. Each node tries to get the agreement for the new message and it's data.
+5. If nodes get agreement to store new data, the new data will be established in the next block.
 
 The important things in the process are,
 
 * The agreement will be done by the consensus protocol, ISAAC+, and the agreement is made by voting with consensus nodes
-* All the incoming message is validated by consensus nodes
-* Only agreed data is established(stored) in the block
+* All the incoming message is validated by consensus nodes.
+* Only agreed data is established(stored) in the block.
 
-This is the normal process of PBFT-based blockchain. Mitum follows the classic scenario of PBFT.
+This is the normal process of PBFT based blockchain. Mitum follows the classic scenario of PBFT.
 
 Uncompressed Version
 ============================================================

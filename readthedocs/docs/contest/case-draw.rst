@@ -5,4 +5,4 @@ DRAW: Voting Result Ends in Tie
 
 .. todo::
 
-    This section will be describied later.
+    This section will be described later.

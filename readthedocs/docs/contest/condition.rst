@@ -2,7 +2,7 @@
 Condition
 ============================================================
 
-``condition`` field can be defined in the top level of The config file. The sub fields can be defined with condition expressions.
+``condition`` field can be defined in the top-level of The config file. The sub fields can be defined with condition expressions.
 
 .. code-block:: yaml
    :linenos:
@@ -44,7 +44,7 @@ Basically the section of condition field has these structure:
                 - experssion #2
                 - experssion #3
 
-``all`` section is pre-defined section, the conditions in ``all`` section, will be applied to all the nodes. For example, the conditions under ``node_state`` should be matched to all nodes. ``new_block`` also too.
+``all`` section is predefined section, the conditions in ``all`` section, will be applied to all the nodes. For example, the conditions under ``node_state`` should be matched to all nodes. ``new_block`` also too.
 
 .. note::
 

@@ -26,7 +26,7 @@ Welcome to mitum's documentation!
 
    docs/isaac+/isaac+-introduction
    docs/isaac+/how-isaac+-works
-   docs/isaac+/isaac+-compare-with-classic-pbft
+   docs/isaac+/isaac+-compares-with-classic-pbft
    docs/isaac+/node-states
    docs/isaac+/voting-stages
    docs/isaac+/isaac+-weakness-and-limitations
@@ -53,7 +53,7 @@ Welcome to mitum's documentation!
 
 .. include: common.rst
 
-.. this js scrript will hide side menu from the index page.
+.. this js script will hide side menu from the index page.
 .. raw:: html
 
     <style type="text/css">

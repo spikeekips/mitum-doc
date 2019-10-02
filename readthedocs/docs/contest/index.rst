@@ -2,8 +2,8 @@
 Contest: ISAAC+ Consensus Simulator
 ============================================================
 
-There are huge amount of documentations for various kind of consensus protocol
-and also there are lots of implementations for helping to understand it's
+There are huge amounts of documentations for various kind of consensus protocol
+and also there are lots of implementations for helping to understand its
 mechanism. Contest is the implementation for simulating the detailed mechanism
 of ISAAC+.
 

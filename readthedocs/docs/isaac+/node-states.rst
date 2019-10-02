@@ -43,12 +43,12 @@ States
 Booting
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-* Node is just deployed and prepare it's resources to join the network.
+* Node is just deployed and prepare its resources to join the network.
 
 Syncing
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-* The newly started node tries to sync it's block state to the latest of network.
+* The newly started node tries to sync its block state to the latest of network.
 * If node can not participate consensus, that means, it is not in suffrage group, it will stay the *Syncing* state for syncing the latest block state.
 
 Joining
@@ -66,5 +66,5 @@ Consensus
 Stopped
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-* By any reason  when node is stopping or stopped.
+* By any reason when node is stopping or stopped.
 

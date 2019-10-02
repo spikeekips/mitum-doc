@@ -2,13 +2,13 @@
 Voting Failure: Timeout
 ================================================================================
 
-INIT Stage
+Failure Of INIT Stage
 --------------------------------------------------------------------------------
 
 :Under situation:
 
-    * Suffrage group members votes for INIT stage.
-    * Some of nodes does not offer the INIT ballot,
+    * Suffrage group members vote for INIT stage.
+    * Some nodes does not offer the INIT ballot,
     * The number of these nodes is over *blocking number*.
     * Timed out in a given time, each node fails to get enough ballots for INIT stage.
 
@@ -31,11 +31,11 @@ INIT Stage
 
 :Expected actions:
 
-    * Each node stops the consensus process and changes it's state to *Joining*.
+    * Each node stops the consensus process and changes its state to *Joining*.
     * Each node will request *VoteProof* to the others.
 
 
-Proposing
+Failure Of Proposing
 --------------------------------------------------------------------------------
 
 :Under situation:
@@ -50,13 +50,13 @@ Proposing
     * Each node broadcasts next INIT ballots for next round.
 
 
-SIGN, ACCEPT Stages
+Failure Of SIGN, ACCEPT Stages
 --------------------------------------------------------------------------------
 
 :Under situation:
 
-    * Suffrage group members votes for SIGN stage.
-    * Some of nodes in **acting suffrage group** does not offer the SIGN ballot.
+    * Suffrage group members vote for SIGN stage.
+    * Some nodes in **acting suffrage group** does not offer the SIGN ballot.
     * Timed out in a given time, each node fails to get enough ballots for SIGN
       stage.
 

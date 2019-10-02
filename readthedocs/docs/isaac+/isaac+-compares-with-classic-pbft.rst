@@ -45,7 +45,7 @@ Each stage does have similar meaning.
 
 *SIGN*
     * Only members of acting suffrage group participate.
-    * Similar to the *Pre-Prepare*, the selected proposer(leader in PBFT) broadcasts it's proposal to the network
+    * Similar to the *Pre-Prepare*, the selected proposer(leader in PBFT) broadcasts its proposal to the network
     * Similar to the *Prepare*, each node will validate the proposal
 
 *ACCEPT*

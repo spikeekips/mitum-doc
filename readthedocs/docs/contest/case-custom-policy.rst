@@ -16,7 +16,7 @@ In mitum, there are several factors for policy, these factors can control how mi
 
 
 ``threshold``
-    By default, ``threshold`` is ``67`` percent. This means how many node should agree on voting stage. ``67`` percent needs 2/3 of all nodes. If it is ``100``, nodes agree unanimously.
+    By default, ``threshold`` is ``67`` percent. This means how many nodes should agree on voting stage. ``67`` percent needs 2/3 of all nodes. If it is ``100``, nodes agree unanimously.
 
 ``interval_broadcast_init_ballot_in_join``
     This factor can control how often node will send *INIT* ballot in *join* state. If ``3s``, node will send *INIT* ballot every 3 seconds.

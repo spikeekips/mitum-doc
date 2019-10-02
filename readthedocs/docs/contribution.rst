@@ -2,7 +2,7 @@
 Contribution
 ============================================================
 
-Mitum started as opensource project and it will be. Any kind of contribution will be welcome. At this time, mitum needs your help at this parts:
+Mitum started as open source project and it will be. Any kind of contribution will be welcome. At this time, mitum needs your help at these parts:
 
 * Development
 * Documentation

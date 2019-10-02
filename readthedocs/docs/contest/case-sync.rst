@@ -5,5 +5,5 @@ Sync
 
 .. todo::
 
-    This section will be describied later.
+    This section will be described later.
 

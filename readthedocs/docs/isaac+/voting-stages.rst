@@ -27,7 +27,7 @@ The first step of consensus starts at *INIT* voting. Unlike the other stages all
 * Making agreement for next block
 * Making agreement for new round
 
-The ballot for *INIT* stage has several informations:
+The ballot for *INIT* stage has information:
 
 * New block
 * Round of new block(previous voting)
@@ -47,7 +47,7 @@ When *INIT* voting is finished, the new proposer of newly selected acting suffra
 Proposal
 ------------------------------------------------------------
 
-Proposal is proposed by proposer, which is selected node from acting suffrage group. Proposal has these information:
+*Proposal* is proposed by proposer, which is selected node from acting suffrage group. Proposal has this information:
 
 * Next block
 * Next round
@@ -68,7 +68,7 @@ If proposal is received, but invalid:
 * But it has some problems:
 
     * Proposal message is not well-formatted, or
-    * The informations of proposal is not correct, or
+    * The information of proposal is not correct, or
     * Messages in the proposal is not valid, etc.
 * Node will start new round.
 
@@ -79,7 +79,7 @@ Stages For Acting Suffrage Group
 
 *SIGN* and *ACCEPT* stage is done by acting suffrage group, not by suffrage group.
 
-Even if acting suffrage group fails to get agreement at *SIGN* or *ACCEPT*, the consensus process keeps going. The agreement of suffrage group decides the next block, not by one of acting suffrage group.
+Even if acting suffrage group fails to get agreement at *SIGN* or *ACCEPT*, the consensus process keeps going. The agreement of suffrage group decides to the next block, not by one of acting suffrage group.
 
 For example,
 
@@ -103,7 +103,7 @@ This *SIGN* voting fails to get agreement,
 * ``H0``: ``m0``, ``m1``; under threshold 3
 * ``H1``: ``m2``, ``m3``; also under threshold 3
 
-No hash failed to be over threshold(3). With this voting result, they moves to the next stage, *ACCEPT*:
+No hash failed to be over threshold(3). With this voting result, they move to the next stage, *ACCEPT*:
 
 =======  ========= =======
  node    stage     block
@@ -114,7 +114,7 @@ No hash failed to be over threshold(3). With this voting result, they moves to t
  ``m3``  *ACCEPT*  ``H1``
 =======  ========= =======
 
-Even if getting agreement failed. Why acting suffrage members moves to *ACCEPT*?	In ISAAC+, the agreement failure inside acting suffrage group does not mean the agreement failure of entire network. As described earlier, acting suffrage group exists for proposing proposal and verifying the ability and health of node continuously. The voting of acting suffrage group will be evaluated by all the suffrage group members and if some node be thought as faulty node, it will be handled by network policy and rule.
+Even if agreement failed, why acting suffrage members moves to *ACCEPT*? In ISAAC+, the agreement failure inside acting suffrage group does not mean the agreement failure of entire network. As described earlier, acting suffrage group exists for proposing proposal and verifying the ability and health of node continuously. The voting of acting suffrage group will be evaluated by all the suffrage group members and if some node be thought as faulty node, it will be handled by network policy and rule.
 
 After *ACCEPT* stage is finished, the next *INIT* stage will be like this;
 
@@ -155,9 +155,9 @@ SIGN
 
 After agreement of *INIT* stage, consensus process moves to *SIGN* stage. The voting at this stage is on the proposal for the next block. Basically proposal has the contents of the next block, so node checks and validates the content of proposal. Each node can produce the next block from proposal and vote by the produced next block.
 
-The ballot for *SIGN* stage has these informations:
+The ballot for *SIGN* stage has this information:
 
-* Latest block
+* The latest block
 * Round
 * Proposal
 * Next block
@@ -171,11 +171,11 @@ ACCEPT
 *ACCEPT* stage is the final stage of acting suffrage group. The consensus process will work if *INIT* stage be started after *SIGN* without *ACCEPT* stage. This stage maybe looks redundant, but there are some reasons:
 
 * During 2 stage, *SIGN* and *ACCEPT* by the acting suffrage group, the suffrage group will have enough time to share result rather than with only *SIGN* stage.
-* The minority node at *SIGN* stage can have chance to correct it's decision. With node maybe estimated as none-intact node by only *SIGN* voting.
+* The minority node at *SIGN* stage can have chance to correct its decision. With node maybe estimated as none-intact node by only *SIGN* voting.
 
-The ballot for *ACCEPT* stage has these informations:
+The ballot for *ACCEPT* stage has this information:
 
-* Latest block
+* The latest block
 * Round
 * Proposal
 * Next block

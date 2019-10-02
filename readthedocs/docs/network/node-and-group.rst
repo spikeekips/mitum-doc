@@ -2,7 +2,7 @@
 Node and Group
 ============================================================
 
-In mitum network, there are several types of nodes by it's role and situations.
+In mitum network, there are several types of nodes by its role and situations.
 
 Home Node
 ------------------------------------------------------------
@@ -13,7 +13,7 @@ Suffrage Group
 ------------------------------------------------------------
 
 * Basically this member will keep the network going correctly.
-* This member have the right to participate the consensus process.
+* This member has the right to participate the consensus process.
 
     * Node, not in suffrage group can not participate the consensus process.
 * The new block is established by the agreement of suffrage group.
@@ -24,7 +24,7 @@ Acting Suffrage Group
 ------------------------------------------------------------
 
 * ISAAC+ will open the new round for establishing the next new block. In new round, not all the suffrage group members participate, only the limited members can join.
-* In new round, the limited members is selected randomly, this members will be "acting suffrage group members".
+* In new round, the limited members is selected randomly, these members will be "acting suffrage group members".
 * The member of acting suffrage group will be tested and challenged, whether it works correctly without problem by the other suffrage group members.
 
 .. note::
@@ -62,10 +62,10 @@ Commonly faulty node is:
 
 Faulty node in suffrage group is:
 
-    * When it does not serve BlockProof
-    * When it serves the invalid BlockProof
-    * When it does not serve VotingProof
-    * When it serves the invalid VotingProof
+    * When it does not serve *BlockProof*
+    * When it serves the invalid *BlockProof*
+    * When it does not serve *VotingProof*
+    * When it serves the invalid *VotingProof*
 
 Faulty node in acting suffrage group is:
 

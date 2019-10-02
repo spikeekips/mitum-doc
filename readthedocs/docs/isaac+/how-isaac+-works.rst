@@ -2,7 +2,7 @@
 ISAAC+ Mechanism
 ============================================================
 
-As described at the previous section, the consensus voting is processed thru voting stages, *INIT*, *SIGN* and *ACCEPT*. The node, which can participate in consensus process, set it's state to *Consensus* state. If node is under other state, it means node is not ready for participating consensus process.
+As described at the previous section, the consensus voting is processed thru voting stages, *INIT*, *SIGN* and *ACCEPT*. The node, which can participate in consensus process, set its state to *Consensus* state. If node is under other state, it means node is not ready for participating consensus process.
 
 Voting and Round
 ------------------------------------------------------------
@@ -11,7 +11,7 @@ In ISAAC+, node votes to make agreement with the others. How node can vote? The 
 
 Every node knows which nodes are in suffrage group and which nodes are in acting suffrage group at this stage and round. The member information does not need to be shared or synced, because it is managed and established at block like other data of block.
 
-Voting occurs by round. For example, latest block is ``H33``,
+Voting occurs by round. For example, the latest block is ``H33``,
 
 #. *INIT* : ``H34``, ``R0``
 #. *SIGN* : ``H34``, ``R0``

@@ -17,11 +17,11 @@ Roughly data can be categorized by 2 kinds:
 * Defined data
 * Anonymous data
 
-Every data belongs to the pre-defined type and has the unique id within globally.
+All data belongs to the predefined type and has the unique id within globally.
 
 *Defined data*
 
-    is the data, which is statically defined outside block. It is managed in each node and shared thru network. It is under control of it's type.
+    is the data, which is statically defined outside block. It is managed in each node and shared thru network. It is under control of its type.
 
 *Anonymous data*
 
@@ -32,9 +32,9 @@ The size of data is limited up to certain amount by network policy. Basically da
 Policy
 ------------------------------------------------------------
 
-Most of distributed system should share the basic principles to the siblings. These principles can be shared and should be synced. For example, how many node should be selected as acting suffrage group and the way to select proposer from acting suffrage group.
+Most of distributed system should share the basic principles to the siblings. These principles can be shared and should be synced. For example, how many nodes should be selected as acting suffrage group and the way to select proposer from acting suffrage group.
 
-In mitum these kind of principles, most of policies are managed in block like data. This means that:
+In mitum these kinds of principles, most of the policies are managed in block like data. This means that:
 
 * Policy can be shared to the entire network without additional mechanism.
 * Policy can be updated by consensus like data.
@@ -48,7 +48,7 @@ Model
 
 By designing data and policy, the designer can build and launch his/her own model of network.
 
-For example, the designer want to build currency model in mitum. He/Her can define several currency and it's related data and add additional policy.
+For example, the designer want to build currency model in mitum. He/Her can define several currencies and it's related data and add additional policy.
 
 Data types:
 
