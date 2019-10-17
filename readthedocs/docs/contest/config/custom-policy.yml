@@ -8,7 +8,23 @@ global:
 condition:
     all:
         node_state:
-            - current_state="booting" and new_state="joining"
+            # {
+            #   "level": "info",
+            #   "node": "n0",
+            #   "current_state": "booting",
+            #   "new_state": "joining",
+            #   "m": "state changed"
+            # }
+            - current_state="booting" AND new_state="joining"
+            # {
+            #   "level": "info",
+            #   "node": "n0",
+            #   "current_state": "joining",
+            #   "new_state": "consensus",
+            #   "m": "state changed"
+            # }
+            - current_state="joining" AND new_state="consensus"
+
 
         new_block:
             - m="new block created" and block.height>=12 and block.round=0
