@@ -27,6 +27,9 @@ In mitum, there are several factors for policy, these factors can control how mi
 ``timeout_wait_ballot``
     In consensus state, node will wait ballots for ``timeout_wait_ballot`` and if fails to get enough ballots within ``timeout_wait_ballot``, node will move to next round.
 
+``timeout_wait_init_ballot``
+    In consensus state, node will wait *INIT* ballots for ``timeout_wait_init_ballot`` and if fails to get enough ballots within ``timeout_wait_init_ballot``, node will change it's state to *Joining*, it means consensus process will be stopped and tries to check the health of network.
+
 
 .. note::
 
