@@ -39,3 +39,15 @@ code, .rst-content tt, .rst-content code {
 .admonition.error { border: 1px solid #f29f97; }
 .admonition.warning { border: 1px solid #ffedcc; }
 .admonition.admonition-todo { border: 1px solid #f0b37e; }
+
+.rst-footer-buttons > .btn-neutral {
+    background-color: transparent !important;
+    border: none;
+    box-shadow: none;
+}
+
+.wy-nav-content {
+    position: absolute;
+    min-height: 100%;
+    width: 100%;
+}
