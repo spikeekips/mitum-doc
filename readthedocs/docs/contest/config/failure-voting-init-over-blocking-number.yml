@@ -46,7 +46,7 @@ nodes:
 
 condition:
     all:
-         base_state:
+        base_state:
             # {
             #   "level": "info",
             #   "current_state": "booting",
@@ -78,7 +78,7 @@ condition:
             # }
             - m="check majority" AND height=12 AND round=0 AND stage="ACCEPT" AND is_finished=true
 
-         after_failure_state:
+        after_failure_state:
             # {
             #   "level": "info",
             #   "current_state": "consensus",
