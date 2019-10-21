@@ -34,7 +34,7 @@ This is the filtered majority checking messages:
    :linenos:
    :emphasize-lines: 27-29
 
-   $ cat ./contest-failure-voting-init-over-blocking-number/n0.log | \
+   $ cat ./contest-failure-voting-init-under-blocking-number/n0.log | \
         grep -i 'check majority' | \
         jq -c '[.height, .round, .stage, .total, .threshold, .is_finished, .m]' | \
         column -s ',' -t
