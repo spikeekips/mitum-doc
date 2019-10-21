@@ -11,7 +11,7 @@ of situations and cases will be tested by contest.
 
 
    /docs/contest/case-custom-policy
-   /docs/contest/case-voting-failure-timeout
+   /docs/contest/case-voting-failure
    /docs/contest/case-draw
    /docs/contest/case-sync
 
