@@ -1,8 +1,12 @@
 global:
     modules:
         suffrage:
-            name: FixedProposerSuffrage
-            proposer: n3
+            name: ConditionSuffrage
+            conditions:
+                stop:
+                 condition: suffrage.height=13
+                 action: fixed-proposer
+                 value: n3
 nodes:
     n3:
       modules:
@@ -10,8 +14,8 @@ nodes:
               name: ConditionProposalMaker
               conditions:
                   stop:
-                      condition: proposal.height=13 AND proposal.round in (0)
-                      action: empty-proposal
+                   condition: proposal.height=13 AND proposal.round in (0)
+                   action: empty-proposal
 
 condition:
     all:

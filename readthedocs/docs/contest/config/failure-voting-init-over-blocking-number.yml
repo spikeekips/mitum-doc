@@ -1,8 +1,3 @@
-global:
-    modules:
-        suffrage:
-            name: FixedProposerSuffrage
-            proposer: n0
 nodes:
     n2:
       modules:
