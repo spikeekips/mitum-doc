@@ -6,7 +6,7 @@ Mitum is a general privacy blockchain with flexible and resilient way. Mitum can
 
 Basically mitum can provide these main features.
 
-* **SECURITY**: All the in-coming and out-coming messages is signed, so there will be no chance some damaged or malicious messages to be infiltrated. 
+* **SECURITY**: All the in-coming and out-coming messages is signed by signature of sender, so there will be no chance some damaged or malicious messages to be infiltrated. 
 
 * **DESIGNING NETWORK**: mitum network is designed at bootstrap with various policies, network own data types and its native features. These designed factors can be updated without downtime or termination of node and the entire network. 
 
