@@ -12,9 +12,9 @@ Basically mitum can provide these main features.
 
 * **APPLIANCE**: Data in mitum can be defined and designed. Any arbitrary type of data can be supported in mitum. Inside mitum there is a plugin system, so new type of data can be added thru plugin. If you want to launch cryptocurrency network, you can design currency model, define your own currency unit and even inflation rate, etc.
 
-* **CONSENSUS**: mitum guarantees finality. Once the block and it's data are established, it will not be changed or revoked.
+* **CONSENSUS**: mitum guarantees *finality*. Once the block and it's data are established, it will not be changed or revoked.
 
-* **CONSENSUS**: mitum verifies and establishes data by the consensus protocol. We created the consensus protocol, called ISAAC+, which is newly devised and based on the manner of PBFT. ISAAC+ focuses on finality of block. It guarantees liveness, security and limited fault tolerance. ISAAC+ can be extended for the open and public environment, so new nodes can join the network without the external allowance.
+* **CONSENSUS**: mitum verifies and establishes data by the consensus protocol. We created the consensus protocol, called ISAAC+, which is newly devised and based on the manner of PBFT. ISAAC+ focuses on *finality* of block. It guarantees liveness, security and limited fault tolerance. ISAAC+ can be extended for the open and public environment, so new nodes can join the network without the external allowance.
 
 * **CONSENSUS**: ISAAC+ works like well-hardened axe, it is hard to break and resilient from external impact. When some nodes are not intact, it tries to continue agreement. When some blocks are lost in nodes, these data are restored without breaking consensus, the missed consensus messages also be delivered to the edge of network. 
 
