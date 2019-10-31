@@ -1,30 +1,27 @@
 global:
   policy:
-      threshold: 67
-      interval_broadcast_init_ballot_in_join: 5s
-      timeout_wait_vote_result_in_join: 6s
-      timeout_wait_ballot: 6s
+    threshold: 67
+    interval_broadcast_init_ballot_in_join: 5s
+    timeout_wait_vote_result_in_join: 6s
+    timeout_wait_ballot: 6s
 
-condition:
-    all:
-        node_state:
-            # {
-            #   "level": "info",
-            #   "node": "n0",
-            #   "current_state": "booting",
-            #   "new_state": "joining",
-            #   "m": "state changed"
-            # }
-            - current_state="booting" AND new_state="joining"
-            # {
-            #   "level": "info",
-            #   "node": "n0",
-            #   "current_state": "joining",
-            #   "new_state": "consensus",
-            #   "m": "state changed"
-            # }
-            - current_state="joining" AND new_state="consensus"
-
-
-        new_block:
-            - m="new block created" and block.height>=12 and block.round=0
+conditions:
+  all:
+     # {
+     #   "level": "info",
+     #   "node": "n0",
+     #   "current_state": "booting",
+     #   "new_state": "joining",
+     #   "m": "state changed"
+     # }
+     - current_state="booting" AND new_state="joining"
+     # {
+     #   "level": "info",
+     #   "node": "n0",
+     #   "current_state": "joining",
+     #   "new_state": "consensus",
+     #   "m": "state changed"
+     # }
+     - current_state="joining" AND new_state="consensus"
+  
+     - m="new block created" and block.height>=12 and block.round=0

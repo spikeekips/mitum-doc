@@ -1,100 +1,100 @@
 nodes:
-    n3:
-      modules:
-          ballot_maker:
-              name: ConditionBallotMaker
-              conditions:
-                  stop:
-                      # {
-                      #   "ballot": {
-                      #     "current_proposal": "sl:7e8sQiEQReVtoe9HcQBfAgNr4V1ZDgx18jpEstuAiA6f",
-                      #     "current_round": 0,
-                      #     "last_block": "bk:2Xii7H6ykkD58euEHe8DEhAZJPxT3owUEj7EHY9e5HGH",
-                      #     "last_round": 0,
-                      #     "next_block": "bk:8pyPKQdX78sAe83zq8EoR6NgvfCqRqKNHduBG3xZLHNJ",
-                      #     "next_height": 13,
-                      #     "stage": "INIT"
-                      #   },
-                      #   "block": {
-                      #     "height": 11,
-                      #     "proposal": "sl:8QiEL44ptpYWVgRUxRr9D3KiBYknetonqeJCjHAPD8js",
-                      #     "round": 0
-                      #   },
-                      #   "node": "n3",
-                      #   "previousBlock": {
-                      #     "height": 10,
-                      #     "proposal": "pp:JC5VCGQWagkpSCAXxMa8737LCjkh1gQNkL91jGPmwCjo",
-                      #     "round": 11
-                      #   },
-                      #   "state": "consensus"
-                      # }
-                      condition: ballot.next_height=13 AND ballot.stage in ("INIT")
-                      action: empty-ballot
-
-condition:
-    all:
-        node_state:
-            # {
-            #   "level": "info",
-            #   "current_state": "booting",
-            #   "new_state": "joining",
-            #   "m": "state changed"
-            # }
-            - current_state="booting" AND new_state="joining"
-            # {
-            #   "level": "info",
-            #   "current_state": "joining",
-            #   "new_state": "consensus",
-            #   "m": "state changed"
-            # }
-            - current_state="joining" AND new_state="consensus"
-
-        check_majority_accept:
-            # {
-            #   "level": "debug",
-            #   "height": "12",
-            #   "round": 0,
-            #   "total": 4,
-            #   "threshold": 3,
-            #   "stage": "ACCEPT",
-            #   "set": [
-            #     3
-            #   ],
-            #   "is_finished": true,
-            #   "m": "check majority"
-            # }
-            - m="check majority" AND height=12 AND round=0 AND stage="ACCEPT" AND is_finished=true
-
-        check_majority_next_init:
-            # {
-            #   "level": "debug",
-            #   "height": "13",
-            #   "round": 0,
-            #   "total": 4,
-            #   "threshold": 3,
-            #   "stage": "INIT",
-            #   "set": [
-            #     2
-            #   ],
-            #   "is_finished": true,
-            #   "m": "check majority"
-            # }
-            - m="check majority" AND height=13 AND round=0 AND stage="INIT" AND is_finished=true
-
-        new_block_created:
-            # {
-            #   "level": "info",
-            #   "block": {
-            #     "hash": {
-            #       "hash": "bk:BoaK2qQSS9qLXDVCtdCG1RA6t5d8JSb73dZLVRCqervp"
-            #     },
-            #     "height": 12,
-            #     "round": 0,
-            #     "proposal": {
-            #       "hash": "sl:2i1BLweYsSv6egsWooqSigDjvAzhueVv2AKB52wqYkaX"
-            #     },
-            #     "createdAt": "2019-10-17T13:20:37.258171+09:00"
-            #   },
-            #   "m": "new block created"
-            # }
-            - m="new block created" AND block.height=13 AND block.round=0
+  n3:
+    modules:
+      ballot_maker:
+        name: ConditionBallotMaker
+        conditions:
+          # {
+          #   "ballot": {
+          #     "current_proposal": "sl:7e8sQiEQReVtoe9HcQBfAgNr4V1ZDgx18jpEstuAiA6f",
+          #     "current_round": 0,
+          #     "last_block": "bk:2Xii7H6ykkD58euEHe8DEhAZJPxT3owUEj7EHY9e5HGH",
+          #     "last_round": 0,
+          #     "next_block": "bk:8pyPKQdX78sAe83zq8EoR6NgvfCqRqKNHduBG3xZLHNJ",
+          #     "next_height": 13,
+          #     "stage": "INIT"
+          #   },
+          #   "block": {
+          #     "height": 11,
+          #     "proposal": "sl:8QiEL44ptpYWVgRUxRr9D3KiBYknetonqeJCjHAPD8js",
+          #     "round": 0
+          #   },
+          #   "node": "n3",
+          #   "previousBlock": {
+          #     "height": 10,
+          #     "proposal": "pp:JC5VCGQWagkpSCAXxMa8737LCjkh1gQNkL91jGPmwCjo",
+          #     "round": 11
+          #   },
+          #   "state": "consensus"
+          # }
+          - condition: ballot.next_height=13 AND ballot.stage in ("INIT")
+            actions:
+              - action: empty-ballot
+  
+conditions:
+  all:
+    # node_state:
+    # {
+    #   "level": "info",
+    #   "current_state": "booting",
+    #   "new_state": "joining",
+    #   "m": "state changed"
+    # }
+    - current_state="booting" AND new_state="joining"
+    # {
+    #   "level": "info",
+    #   "current_state": "joining",
+    #   "new_state": "consensus",
+    #   "m": "state changed"
+    # }
+    - current_state="joining" AND new_state="consensus"
+    
+    # check_majority_accept:
+    # {
+    #   "level": "debug",
+    #   "height": "12",
+    #   "round": 0,
+    #   "total": 4,
+    #   "threshold": 3,
+    #   "stage": "ACCEPT",
+    #   "set": [
+    #     3
+    #   ],
+    #   "is_finished": true,
+    #   "m": "check majority"
+    # }
+    - m="check majority" AND height=12 AND round=0 AND stage="ACCEPT" AND is_finished=true
+    
+    # check_majority_next_init:
+    # {
+    #   "level": "debug",
+    #   "height": "13",
+    #   "round": 0,
+    #   "total": 4,
+    #   "threshold": 3,
+    #   "stage": "INIT",
+    #   "set": [
+    #     2
+    #   ],
+    #   "is_finished": true,
+    #   "m": "check majority"
+    # }
+    - m="check majority" AND height=13 AND round=0 AND stage="INIT" AND is_finished=true
+    
+    # new_block_created:
+    # {
+    #   "level": "info",
+    #   "block": {
+    #     "hash": {
+    #       "hash": "bk:BoaK2qQSS9qLXDVCtdCG1RA6t5d8JSb73dZLVRCqervp"
+    #     },
+    #     "height": 12,
+    #     "round": 0,
+    #     "proposal": {
+    #       "hash": "sl:2i1BLweYsSv6egsWooqSigDjvAzhueVv2AKB52wqYkaX"
+    #     },
+    #     "createdAt": "2019-10-17T13:20:37.258171+09:00"
+    #   },
+    #   "m": "new block created"
+    # }
+    - m="new block created" AND block.height=13 AND block.round=0
