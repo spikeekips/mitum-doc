@@ -17,7 +17,7 @@ Failure Nodes Under Blocking Number At INIT Stage
    :caption: `failure-voting-init-under-blocking-number.yml <https://github.com/spikeekips/mitum-doc/raw/proto2/readthedocs/docs/contest/config/failure-voting-init-under-blocking-number.yml>`_
    :language: yaml
    :linenos:
-   :emphasize-lines: 30-32,100
+   :emphasize-lines: 8-10,25
 
 .. code-block:: sh
    :linenos:

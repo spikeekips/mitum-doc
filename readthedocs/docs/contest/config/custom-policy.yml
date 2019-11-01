@@ -7,6 +7,7 @@ global:
 
 conditions:
   all:
+     # base state
      # {
      #   "level": "info",
      #   "node": "n0",
@@ -24,4 +25,5 @@ conditions:
      # }
      - current_state="joining" AND new_state="consensus"
   
+     # new block created
      - m="new block created" and block.height>=12 and block.round=0

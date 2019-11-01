@@ -1,0 +1,39 @@
+# n2 and n3 will make ballot, which has wrong block hash when height, 13 and round, 0; previous round is 0.
+nodes:
+  n2:
+    modules:
+      ballot_maker:
+        name: ConditionBallotMaker
+        conditions:
+          - condition: ballot.next_height=13 AND ballot.current_round=0 AND ballot.last_round=0 AND ballot.stage in ("INIT")
+            actions:
+              - action: random-next_block
+  n3:
+    modules:
+      ballot_maker:
+        name: ConditionBallotMaker
+        conditions:
+          - condition: ballot.next_height=13 AND ballot.current_round=0 AND ballot.last_round=0  AND ballot.stage in ("INIT")
+            actions:
+              - action: random-next_block
+  
+conditions:
+  all:
+    # base state
+    - current_state="booting" AND new_state="joining"
+    - current_state="joining" AND new_state="consensus"
+  
+    # got ACCEPT majority of block, 12
+    - m="check majority" AND height=12 AND round=0 AND stage="ACCEPT" AND is_finished=true
+
+    # got INIT majority of block, 13 and round, 0, but drawed
+    - m="check majority" AND height=13 AND round=0 AND stage="INIT" AND agreement="DRAW" AND is_finished=true
+
+    # after failed, start next round of block, 12 with round 1
+    - m="check majority" AND height=12 AND round=1 AND stage="INIT" AND agreement="MAJORITY" AND is_finished=true
+
+    # got INIT majority of block, 13 and round, 0
+    - m="check majority" AND height=13 AND round=0 AND stage="INIT" AND agreement="MAJORITY" AND is_finished=true
+  
+    # new block created for height, 13 and next round, 0
+    - m="new block created" AND block.height=13 AND block.round=0

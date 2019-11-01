@@ -38,7 +38,7 @@ This is the filtered majority checking messages:
 
    $ cat ./contest-failure-voting-init-over-blocking-number/n0.log | \
         grep -i 'check majority' | \
-        jq -c '[.t, .node, .height, .round, .stage, .total, .threshold, .is_finished, .m]' | \
+        jq -c '[.height, .round, .stage, .total, .threshold, .is_finished, .m]' | \
         column -s ',' -t
    ["11"  0  "INIT"    4  3  false  1     "check majority"]
    ["11"  0  "INIT"    4  3  false  2     "check majority"]

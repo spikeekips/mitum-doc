@@ -32,12 +32,12 @@ nodes:
               - action: empty-ballot
   n3:
     modules:
-     ballot_maker:
-       name: ConditionBallotMaker
-       conditions:
-         - condition: ballot.next_height=13 AND ballot.stage in ("INIT")
-           actions:
-             - action: empty-ballot
+      ballot_maker:
+        name: ConditionBallotMaker
+        conditions:
+          - condition: ballot.next_height=13 AND ballot.stage in ("INIT")
+            actions:
+              - action: empty-ballot
   
 conditions:
   all:
@@ -58,7 +58,7 @@ conditions:
     # }
     - current_state="joining" AND new_state="consensus"
   
-    # check_majority_accept
+    # got ACCEPT majority of block, 12 and roundm, 0
     # {
     #   "level": "debug",
     #   "height": "12",
@@ -74,7 +74,7 @@ conditions:
     # }
     - m="check majority" AND height=12 AND round=0 AND stage="ACCEPT" AND is_finished=true
   
-    # after_failure_state
+    # after timeed out, all nodes moves to joining state
     # {
     #   "level": "info",
     #   "current_state": "consensus",

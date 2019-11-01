@@ -17,7 +17,7 @@ Failure Of Proposing
    :caption: `failure-voting-init-over-blocking-number.yml <https://github.com/spikeekips/mitum-doc/raw/proto2/readthedocs/docs/contest/config/failure-proposing.yml>`_
    :language: yaml
    :linenos:
-   :emphasize-lines: 9,21-23,40-41
+   :emphasize-lines: 10,23-25,42-43
 
 .. code-block:: sh
    :linenos:
