@@ -23,7 +23,7 @@ nodes:
           - condition: proposal.height=13 AND proposal.round in (0)
             actions:
               - action: empty-proposal
-   
+
 conditions:
   all:
      - current_state="booting" AND new_state="joining"
