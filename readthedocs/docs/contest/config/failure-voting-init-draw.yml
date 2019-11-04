@@ -26,7 +26,7 @@ conditions:
     # got ACCEPT majority of block, 12
     - m="check majority" AND height=12 AND round=0 AND stage="ACCEPT" AND is_finished=true
 
-    # got INIT majority of block, 13 and round, 0, but drawed
+    # got INIT majority of block, 13 and round, 0, but drew
     - m="check majority" AND height=13 AND round=0 AND stage="INIT" AND agreement="DRAW" AND is_finished=true
 
     # after failed, start next round of block, 12 with round 1
