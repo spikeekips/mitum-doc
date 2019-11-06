@@ -1,0 +1,32 @@
+global:
+  modules:
+    proposal_maker:
+      name: ConditionProposalMaker
+      delay: 1s
+      conditions:
+nodes:
+  n3:
+    modules:
+      proposal_validator:
+        name: ConditionProposalValidator
+        conditions:
+          # will make bad block when height, 13 and round, 0
+          - condition: block.height=13 AND block.round in (0)
+            actions:
+              - action: block-hash
+                value: bk:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+
+conditions:
+  all:
+     - current_state="booting" AND new_state="joining"
+     - current_state="joining" AND new_state="consensus"
+  
+     - m="check majority" AND height=14 AND round=0 AND stage="INIT" AND is_finished=true
+  
+  network_creates_new_block:
+     # new block created
+     - node IN ("n0", "n1", "n2") AND m="new block created" AND block.height=13 AND block.round=0
+     - node IN ("n0", "n1", "n2") AND m="new block created" AND block.height=15 AND block.round=0
+
+  but_n3_move_to_sync:
+     - node="n3" AND current_state="consensus" AND new_state="syncing"
