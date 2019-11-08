@@ -4,7 +4,7 @@ global:
       name: ConditionSuffrage
       conditions:
         # set proposer to n3 when height, 12
-        - condition: suffrage.height=13
+        - condition: suffrage.height="13"
           actions:
             - action: fixed-proposer
               value: n3
@@ -20,7 +20,7 @@ nodes:
         delay: 1s
         conditions:
           # will not make proposal when height, 12 and round, 0
-          - condition: proposal.height=13 AND proposal.round in (0)
+          - condition: proposal.height="13" AND proposal.round in (0)
             actions:
               - action: empty-proposal
 
@@ -40,7 +40,7 @@ conditions:
      #   "m": "callback executed"
      # }
      - module="proposal-timeout" AND m LIKE "callback executed" AND elapsed < 50
-     - m="check majority" AND height=13 AND round=1 AND stage="INIT" AND is_finished=true
+     - m="check majority" AND height="13" AND round=1 AND stage="INIT" AND is_finished=true
   
      # new block created
-     - m="new block created" AND block.height=13 AND block.round=1
+     - m="new block created" AND block.height="13" AND block.round=1

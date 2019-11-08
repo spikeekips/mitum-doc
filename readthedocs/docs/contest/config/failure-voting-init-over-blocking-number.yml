@@ -27,7 +27,7 @@ nodes:
           #   },
           #   "state": "consensus"
           # }
-          - condition: ballot.next_height=13 AND ballot.stage in ("INIT")
+          - condition: ballot.next_height="13" AND ballot.stage in ("INIT")
             actions:
               - action: empty-ballot
   n3:
@@ -35,7 +35,7 @@ nodes:
       ballot_maker:
         name: ConditionBallotMaker
         conditions:
-          - condition: ballot.next_height=13 AND ballot.stage in ("INIT")
+          - condition: ballot.next_height="13" AND ballot.stage in ("INIT")
             actions:
               - action: empty-ballot
   
@@ -72,7 +72,7 @@ conditions:
     #   "is_finished": true,
     #   "m": "check majority"
     # }
-    - m="check majority" AND height=12 AND round=0 AND stage="ACCEPT" AND is_finished=true
+    - m="check majority" AND height="12" AND round=0 AND stage="ACCEPT" AND is_finished=true
   
     # after timeed out, all nodes moves to joining state
     # {
