@@ -1,0 +1,14 @@
+[
+    {
+      "conn_info": "1.2.3.4:4321#tls_insecure",
+      "address": "node0sas",
+      "publickey": "yjXAD7m9knauk7qgo44S2BVpKRc8QXcgDQrAqwwxKtbhmpu",
+      "_hint": "node-conninfo-v0.0.1"
+    },
+    {
+      "conn_info": "4.3.2.1:1234#tls_insecure",
+      "address": "node1sas",
+      "publickey": "tZSrHbkNtDzHvjfbKocgaPwNjx99buMBFdhKTUPxXCafmpu",
+      "_hint": "node-conninfo-v0.0.1"
+    }
+]

@@ -1,0 +1,46 @@
+
+.strike {
+    text-decoration: line-through;
+}
+
+th > p {
+    margin-bottom: 0;
+}
+
+.wy-table thead th, .rst-content table.docutils thead th, .rst-content table.field-list thead th {
+    border-bottom-width: 1px;
+}
+
+code, .rst-content tt, .rst-content code {
+    border: none;
+    font-size: 87%;
+    color: #9f0000 !important;
+    background-color: rgba(128, 128, 128, 0.22);
+    padding: 0 0.3em;
+}
+
+.rst-content dl:not(.docutils) dt {
+    width: 100%;
+    background-color: transparent;
+    border-top: none;
+}
+
+
+.rst-content dl:not(.docutils) dt code span::after {
+    content: ":"
+}
+
+.admonition {
+    background-color: transparent !important;
+    border: 1px solid #6ab0de;
+}
+
+.admonition.error { border: 1px solid #f29f97; }
+.admonition.warning { border: 1px solid #ffedcc; }
+.admonition.admonition-todo { border: 1px solid #f0b37e; }
+
+.rst-footer-buttons > .btn-neutral {
+    background-color: transparent !important;
+    border: none;
+    box-shadow: none;
+}

@@ -1,0 +1,22 @@
+address: no0sas
+privatekey: EYc4WdFjP9qkgfwJZfnsVXeh827rsNppm5HUSjSDeMFFmpr
+network_id: mitum; Sat 26 Dec 2020 05:29:13 AM KST
+network:
+  bind: 0.0.0.0:4320
+  tls_insecure: true
+storage:
+  base: /mitum-data
+  database: leveldb://
+sync_sources:
+  - type: sync-source-node
+    address: no1sas
+    publickey: 25AZEiKTPhNkpcj6B1mofXHFyJRR8DaEMcNjc2WSvvW8Jmpu
+    publish: localhost:4321
+    tls_insecure: true
+  - type: sync-source-suffrage-nodes
+    publish: 1.2.3.4:4321
+    tls_insecure: true
+  - type: sync-source-sync-nodes
+    publish: 1.2.3.4:4321
+    tls_insecure: true
+  - https://a.b.c.d/sync-sources.json
