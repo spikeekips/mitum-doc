@@ -44,3 +44,7 @@ code, .rst-content tt, .rst-content code {
     border: none;
     box-shadow: none;
 }
+
+.toctree-wrapper ul li {
+    list-style-type: none !important;
+}

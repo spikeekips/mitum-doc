@@ -13,7 +13,6 @@ Genesis Config
 .. literalinclude:: file/genesis-design.yml
    :language: yaml
    :linenos:
-   :lines: -15
    :caption: genesis-design.yml
 
 * ``facts`` lists the facts of genesis operations. It's shape is almost

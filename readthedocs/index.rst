@@ -6,6 +6,7 @@ Welcome to mitum documentation!
 
    docs/intro
    docs/deploy
+   docs/cmd-usage
 
 
 .. include: common.rst
