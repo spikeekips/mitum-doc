@@ -11,6 +11,7 @@ Command: `network client`
      network client
   
      Arguments:
+       <network-id>    network-id
        <header>      request header; 'example' will print example headers
        [<remote>]    remote node conn info
   

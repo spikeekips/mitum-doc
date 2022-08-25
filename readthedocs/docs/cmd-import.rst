@@ -11,7 +11,6 @@ Command: `import`
      import from block data
     
      Arguments:
-       <node design>       node design
        <from directory>    block data directory to import
     
      Flags:
@@ -22,6 +21,11 @@ Command: `import`
        --log.format="terminal"    log format: {json, terminal}
        --log.level=debug          log level: {trace, debug, info, warn, error}
        --[no-]log.force-color     log force color
+
+     design
+       --design=./config.yml               design uri; 'file:///config.yml', 'https://a.b.c.d/config.yml'
+       --[no-]design.https.tls_insecure    https tls insecure
+
 
 You can import the existing block data. By default, mitum creates and manges
 block data like this;

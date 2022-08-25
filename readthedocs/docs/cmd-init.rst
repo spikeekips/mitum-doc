@@ -10,7 +10,6 @@ Command: `init`
      init node
 
      Arguments:
-       <node design>       node design
        <genesis design>    genesis design
 
      Flags:
@@ -22,4 +21,7 @@ Command: `init`
        --log.level=debug          log level: {trace, debug, info, warn, error}
        --[no-]log.force-color     log force color
 
+     design
+       --design=./config.yml               design uri; 'file:///config.yml', 'https://a.b.c.d/config.yml'
+       --[no-]design.https.tls_insecure    https tls insecure
 

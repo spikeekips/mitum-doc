@@ -37,6 +37,6 @@ Facts
 
   .. code-block:: sh
 
-     $ ./mitum-example init first-node.yml genesis-degign.yml
+     $ ./mitum-example init genesis-degign.yml --design=first-node.yml 
 
 This will initialize storage and generates genesis block.

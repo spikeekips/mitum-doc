@@ -10,9 +10,6 @@ Command: `run`
    
      run node
    
-     Arguments:
-       <node design>    node design
-   
      Flags:
        -h, --help                      Show context-sensitive help.
    
@@ -24,6 +21,10 @@ Command: `run`
        --log.format="terminal"    log format: {json, terminal}
        --log.level=debug          log level: {trace, debug, info, warn, error}
        --[no-]log.force-color     log force color
+
+     design
+       --design=./config.yml               design uri; 'file:///config.yml', 'https://a.b.c.d/config.yml'
+       --[no-]design.https.tls_insecure    https tls insecure
 
 Flags
 ------------------------------------------------------------
